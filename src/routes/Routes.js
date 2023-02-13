@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 
 import { injectStyle } from "react-toastify/dist/inject-style";
-import DashBoard from './../containers/DashBoard/DashBoard';
 import PrivateRouterLogin from './../containers/customRouter/PrivateRouterLogin';
 
 function Routes() {
@@ -12,7 +11,7 @@ function Routes() {
 
     return (
         <Switch>
-            <Route exact path="/dashboard" component={DashBoard} />
+            {/* <Route exact path="/dashboard" component={DashBoard} /> */}
         </Switch>
     );
 }

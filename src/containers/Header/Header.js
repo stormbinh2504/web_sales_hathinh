@@ -3,73 +3,64 @@ import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from '../../redux/actions'
 import { TYPE_USER } from '../../utils';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.scss"
+const src = "https://onetechvietnam.com/wp-content/uploads/2022/07/logo-website-onetech-vietnam.png"
+
+const ElementColumn = () => {
+    return (
+        <div class="elementor-column col-4" data-id="5fcb72ee" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-19c5c969 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="19c5c969" data-element_type="widget" data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-icon">
+                                <span class="elementor-icon elementor-animation-">
+                                    {/* <i aria-hidden="true" class="far fa-check-circle"></i> */}
+                                    {/* <i class="fa fa-check-circle-o" aria-hidden="true"></i> */}
+                                    <FontAwesomeIcon icon="fa-sharp fa-regular fa-circle-check" />
+                                </span>
+                            </div>
+                            <div class="elementor-icon-box-content">
+                                <span class="elementor-icon-box-title">
+                                    <span>
+                                        Tư vấn, thiết kế 3D
+                                    </span>
+                                </span>
+                                <p class="elementor-icon-box-description">
+                                    Hoàn toàn miễn phí
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
 const Header = () => {
     const history = useHistory()
     const dispatch = useDispatch()
 
-    const onRedirectPosting = () => {
-        dispatch(actions.setTypeUser(TYPE_USER.BROKER))
-        history.push("/home-broker")
-    }
-
     const onRedirectHome = () => {
-        dispatch(actions.setTypeUser(TYPE_USER.CUSTOMER))
-        history.push("/home")
+        history.push("/")
     }
 
     return (
         <div className='header'>
             <div className="container container-header">
-                <div className="navbar-logo item-center">
-                    <div onClick={onRedirectHome}>
-                        <img className="img-logo" src="https://mogi.vn/content/Images/logo.svg" />
-                    </div>
-                </div>
-                <div className="navbar-menu">
-                    <div className="menu-list">
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Tìm mua
-                            </Link>
-                        </div>
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Tìm nhà
-                            </Link>
-                        </div>
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Giá nhà đất
-                            </Link>
-                        </div>
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Hỏi đáp
-                            </Link>
-                        </div>
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Môi giới
-                            </Link>
-                        </div>
-                        <div className="menu-item item-center">
-                            <Link to="/find">
-                                Dự án
-                            </Link>
+                <div className="row gutters-0 w-100">
+                    <div className="col-12 col-ms-6 col-lg-4 navbar-logo item-center">
+                        <div onClick={onRedirectHome}>
+                            <img className="img-logo" src={src} />
                         </div>
                     </div>
-                </div>
-                <div className="navbar-user item-center">
-                    <div className="user-avatar">
-                        <div className="avatar">
-                            <i class="fa fa-user-circle"></i>
-                        </div>
-                    </div>
-                    <div className="user-posting">
-                        <div className="btn-posting item-center" onClick={onRedirectPosting}>
-                            Đăng tin
+                    <div class="elementor-container elementor-column-gap-default col-12 col-ms-6 col-lg-8 ">
+                        <div class="row w-100 gutters-0">
+                            <ElementColumn />
+                            <ElementColumn />
+                            <ElementColumn />
                         </div>
                     </div>
                 </div>
