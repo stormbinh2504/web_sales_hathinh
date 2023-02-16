@@ -1,62 +1,137 @@
 import React from 'react'
-import Header from '../Header/Header'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import "./Home.scss"
+import { AnimateCounterNumber } from '../../utils';
+import { useEffect } from 'react';
+import HomeStep from './HomeStep/HomeStep';
+import HomeBanner from './HomeBanner/HomeBanner';
+import OurCustomer from './OurCustomer/OurCustomer';
 
+const src1 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_1.jpg?v=1455"
+const src2 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
+const src3 = "//theme.hstatic.net/200000335999/1000709370/14/slideshow_2.jpg?v=1455"
 const Home = () => {
+
+    const reveal = () => {
+        let reveals = document.getElementById('home-counter');
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals.getBoundingClientRect().top;
+        var elementVisible = 150;
+        if (elementTop < windowHeight - elementVisible) {
+            LoadAnimateCounterNumber()
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", reveal);
+
+        return () => {
+            window.removeEventListener("scroll", reveal);
+        };
+    }, []);
+
+    const LoadAnimateCounterNumber = () => {
+        let text1 = document.getElementById('counter-number1');
+        let text2 = document.getElementById('counter-number2');
+        let text3 = document.getElementById('counter-number3');
+        let text4 = document.getElementById('counter-number4');
+        AnimateCounterNumber(text1, 0, 15, 3000);
+        AnimateCounterNumber(text2, 0, 100, 3000);
+        AnimateCounterNumber(text3, 0, 8500, 3000);
+        AnimateCounterNumber(text4, 0, 100, 3000);
+        window.removeEventListener("scroll", reveal);
+    }
+
     return (
         <div className='container-home'>
-            <div className="container-slider">
-                <div id="search-bar">
-
-                </div>
+            <div className="slider">
+                <OwlCarousel items={1}
+                    className="owl-theme"
+                    loop={true}
+                    autoplay={true}
+                    nav={true}
+                    autoHeight={true}
+                    navText={[
+                        '<span class="arrow prev"><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
+                        '<span class="arrow next"><i class="fa fa-angle-right" aria-hidden="true"></i></span>'
+                    ]}
+                // margin={8}
+                >
+                    <div ><img className="img" src={src1} /></div>
+                    <div><img className="img" src={src2} /></div>
+                    <div><img className="img" src={src3} /></div>
+                </OwlCarousel>
             </div>
-            <div className="container-top-properties">
-                <div className="container top-properties-info">
-                    <div id="project-list" class="block-info list-items" ng-non-bindable="">
-                        <h2 class="title">Tin tức bất động sản</h2>
-                        <div class="property-items clearfix">
-                            <div class="top-news row">
-                                <div class="highlight-news-items col-sm-8">
-                                    <a href="https://news.mogi.vn/pu-luong-thanh-hoa/">
-                                        <div class="top-highlight">
-                                            <img src="https://cloud.mogi.vn/news/thumb-detail/2022/07/25/363/829854a1b7d34be5a6457ed0891e6974.jpg" />
-                                            <div class="top-highlights">
-                                                <h3 class="top-highlight-title">Cẩm Nang Du Lịch Pù Luông Thanh Hoá – Khám Phá Thiên Nhiên Tây Bắc</h3>
-                                                <div class="top-highlight-desc">Pù Luông Thanh Hóa là một trong những địa điểm nổi tiếng được rất nhiều khách du lịch tìm hiểu. Vậy Pù Luông ở đâu và du lịch Pù Luông có những điểm hấp dẫn gì nổi bật nhất? Hãy cùng khám phá khu bảo tồn thiên nhiên Pù Luông qua những chia sẻ dưới </div>
+            <section id="content-home" className="content-home">
+                <div className="content-wrap">
+                    <div id="home-counter" className="home-counter">
+                        <div class="container">
+                            <div className="row">
+                                <div class="section-heading">
+                                    <h2 class="section-title">
+                                        <span>CÔNG TY CỔ PHẦN CÔNG NGHIỆP MYTEK</span>
+                                    </h2>
+                                    <div class="desc">Công ty Cổ phần Công nghiệp MYTEK kể từ ngày thành lập đến nay đã không ngừng phát triển và trở thành một Công ty hàng đầu chuyên về thiết kế và sản xuất kệ chứa hàng phục vụ mọi đối tượng khách hàng trong nước cũng như xuất khẩu. Với thế mạnh là kinh nghiệm lâu năm cùng với đội ngũ cán bộ kỹ thuật được đào tạo chính qui, công nhân tay nghề cao và dây chuyền khép kín, chúng tôi có khả năng tư vấn, thiết kế và trang bị hệ thống kệ chứa hàng cho quý khách với hiệu quả cao nhất và chi phí hợp lý nhất.</div>
+                                </div>
+                                <div class="row w-100">
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="home-counter-item">
+                                            <div class="home-counter-number">
+                                                <span id="counter-number1" data-count="15">0</span> <span>Năm +</span>
+                                            </div>
+                                            <div class="home-counter-border"></div>
+                                            <div class="home-counter-text">
+                                                Kinh nghiệm thực tế
                                             </div>
                                         </div>
-                                    </a>
-                                    <div class="secondary-highlight">
-                                        <a href="https://news.mogi.vn/dht-la-dat-gi/">
-                                            <img src="https://cloud.mogi.vn/news/thumb-detail/2022/07/25/366/6f3302b81a8f42ad88c6d52c8c848bc0.jpg" />
-                                            <h3 class="secondary-highlight-title">DHT là đất gì? Có được mua bán đất DHT hay không?</h3>
-                                        </a>
                                     </div>
-                                    <div class="secondary-highlight">
-                                        <a href="https://news.mogi.vn/dia-diem-du-lich-da-lat/">
-                                            <img src="https://cloud.mogi.vn/news/thumb-detail/2022/07/25/368/07d80f97341547aab43224496380d582.jpg" />
-                                            <h3 class="secondary-highlight-title">Tổng Hợp Các Địa Điểm Du Lịch Đà Lạt Hot Nhất Hiện Nay</h3>
-                                        </a>
+
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="home-counter-item">
+                                            <div class="home-counter-number">
+                                                <span id="counter-number2" data-count="100">0</span> +
+                                            </div>
+                                            <div class="home-counter-border"></div>
+                                            <div class="home-counter-text">
+                                                Cán bộ công nhân viên
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="recent-news col-sm-4">
-                                    <a href="https://news.mogi.vn/khu-du-lich-thuy-chau/"><h3 class="recent-news-title"> Khu Du Lịch Thủy Châu – Bỏ Túi Kinh Nghiệm Dã Ngoại Từ A – Z</h3></a>
-                                    <a href="https://news.mogi.vn/nui-da-voi/"><h3 class="recent-news-title"> Núi Đá Voi địa điểm phải chinh phục và check-in ở Đắk Lắk</h3></a>
-                                    <a href="https://news.mogi.vn/rung-nam-cat-tien/"><h3 class="recent-news-title"> Rừng nam Cát Tiên – Địa điểm du lịch tuyệt vời để cắm trại và khám phá</h3></a>
-                                    <a href="https://news.mogi.vn/thue-chung-cu-quan-5/"><h3 class="recent-news-title"> Bí quyết thuê chung cư quận 5 chất lượng với mức giá tốt</h3></a>
-                                    <a href="https://news.mogi.vn/du-toan-la-gi/"><h3 class="recent-news-title"> Dự toán là gì? Hướng dẫn cách lập dự toán cho người mới bắt đầu</h3></a>
-                                    <a href="https://news.mogi.vn/nha-hxh-nghia-la-gi/"><h3 class="recent-news-title"> Nhà HXH nghĩa là gì? Mua nhà HXH như thế nào sinh lời nhất?</h3></a>
-                                    <a href="https://news.mogi.vn"> <div class="viewmore-all">Xem tất cả</div></a>
+
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="home-counter-item">
+                                            <div class="home-counter-number">
+                                                <span id="counter-number3" data-count="8500">0</span> +
+                                            </div>
+                                            <div class="home-counter-border"></div>
+                                            <div class="home-counter-text">
+                                                Dự án hoàn thành
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6 col-md-6 col-lg-3">
+                                        <div class="home-counter-item">
+                                            <div class="home-counter-number">
+                                                <span id="counter-number4">0</span> %
+                                            </div>
+                                            <div class="home-counter-border"></div>
+                                            <div class="home-counter-text">
+                                                Khách hàng hài lòng
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="project-list" class="block-info list-items" ng-non-bindable="">
-                        <h2 class="title">Dự án nổi bật</h2>
-                        <div class="property-items clearfix"></div>
-                    </div>
+                    <HomeStep />
+                    <HomeBanner />
+                    <OurCustomer />
                 </div>
-            </div>
+            </section>
         </div>
     )
 }

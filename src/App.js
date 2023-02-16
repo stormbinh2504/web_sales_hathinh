@@ -11,6 +11,7 @@ import Sidebar from './containers/Sidebar/Sidebar';
 import Routes from './routes/Routes';
 import Home from './containers/Home/Home';
 import { TYPE_USER } from './utils';
+import Footer from './containers/Footer/Footer';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -22,8 +23,8 @@ function App() {
   return (
 
     <div className="App">
-      < Header />
       <Router>
+        < Header />
         <Switch>
           <div className="main">
             < div id="container-page-content" className="container-page-content ">
@@ -31,7 +32,7 @@ function App() {
             </div>
           </div>
         </Switch>
-
+        <Footer />
         <ToastContainer
           position="top-right"
           autoClose={5000}
