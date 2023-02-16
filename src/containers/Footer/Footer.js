@@ -3,7 +3,6 @@ import { Link, useHistory } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from '../../redux/actions'
 import { TYPE_USER } from '../../utils';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Footer.scss"
 
 

@@ -3,7 +3,6 @@ import { Link, useHistory, withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import * as actions from '../../redux/actions'
 import { TYPE_USER } from '../../utils';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./Header.scss"
 const src = "//theme.hstatic.net/200000335999/1000709370/14/logo.png?v=1455"
 
