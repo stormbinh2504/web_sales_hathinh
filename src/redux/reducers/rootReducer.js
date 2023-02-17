@@ -20,7 +20,7 @@ const persistCommonConfig = {
 const appPersistConfig = {
     ...persistCommonConfig,
     key: 'app',
-    whitelist: ['typeUser']
+    whitelist: ['menuActive']
 };
 
 const authPersistConfig = {

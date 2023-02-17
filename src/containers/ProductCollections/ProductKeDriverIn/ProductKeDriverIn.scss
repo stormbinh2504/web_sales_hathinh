@@ -1,0 +1,21 @@
+@import "../../../styles/common";
+
+.product-ke-driver-in {}
+
+
+// từ 767px trở xuống
+@include media-breakpoint-down(sm) {
+    .product-collections {
+        .content {
+            .content-wrap {
+                .collection-description {
+                    .container {
+                        .rte-col3 {
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

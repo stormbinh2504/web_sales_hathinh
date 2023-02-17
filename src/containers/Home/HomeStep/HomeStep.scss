@@ -102,7 +102,7 @@
 
 
 
-
+// từ 767px trở xuống
 @include media-breakpoint-down(sm) {
     .home-step {
         .home-step-content {
@@ -142,4 +142,9 @@
             }
         }
     }
+}
+
+// từ 1199px trở xuống
+@include media-breakpoint-down(lg) {
+    
 }

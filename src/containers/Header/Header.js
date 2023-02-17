@@ -1,8 +1,9 @@
 import React, { useEffect } from 'react'
 import { Link, useHistory, withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
+import { setMenuActive } from '../../redux/actions'
 import * as actions from '../../redux/actions'
-import { TYPE_USER } from '../../utils';
+import { PATH_NAME, setPathName } from '../../utils';
 import "./Header.scss"
 const src = "//theme.hstatic.net/200000335999/1000709370/14/logo.png?v=1455"
 
@@ -11,6 +12,9 @@ const src = "//theme.hstatic.net/200000335999/1000709370/14/logo.png?v=1455"
 const Header = () => {
     const history = useHistory()
     const dispatch = useDispatch()
+    const state = useSelector((state) => state);
+    const { auth, app } = state
+    const { menuActive } = app
 
     const onRedirectHome = () => {
         history.push("/");
@@ -35,7 +39,6 @@ const Header = () => {
             window.removeEventListener("scroll", onScrollStickyHeader);
         };
     }, []);
-
 
     return (
         <div className='header'>
@@ -98,9 +101,11 @@ const Header = () => {
                 <div id="primary-menu" className="menu style-2 center">
                     <div className="container clearfix">
                         <ul className="nav-menu" >
-                            <li className="nav-menu-item"><a href="/">Trang chủ</a></li>
-                            <li className="nav-menu-item nav-menu-submenu">
-                                <a className="nav-menu-link" href="/collections/gia-ke-mytek">Sản phẩm</a>
+                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.HOME ? "active" : "")}>
+                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.HOME))}>Trang chủ</a>
+                            </li>
+                            <li className={"nav-menu-item nav-menu-submenu " + (menuActive === PATH_NAME.COLLECTIONS ? "active" : "")} >
+                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.COLLECTIONS))} className="nav-menu-link" >Sản phẩm</a>
                                 <ul className="sub-menu" >
                                     <li className="sub-menu-item">
                                         <a href="#">
@@ -181,10 +186,16 @@ const Header = () => {
 
                                 </ul>
                             </li>
-                            <li className="nav-menu-item"><a href="/blogs/du-an-hoan-thanh">Dự án hoàn thành</a></li>
-                            <li className="nav-menu-item"><a href="/pages/ve-chung-toi">Về chúng tôi</a></li>
-                            <li className="nav-menu-item"><a href="/pages/lien-he">Liên hệ</a></li>
-                            <li className="nav-menu-item"><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view?usp=sharing" target="_blank">Tải xuống Catalogue</a></li>
+                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.BLOGS ? "active" : "")}>
+                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.BLOGS))}>Dự án hoàn thành</a>
+                            </li>
+                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.ABOUT_OUR ? "active" : "")}>
+                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.ABOUT_OUR))}>Về chúng tôi</a>
+                            </li>
+                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.CONTACT ? "active" : "")}>
+                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.CONTACT))}>Liên hệ</a>
+                            </li>
+                            <li className={"nav-menu-item "}><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view?usp=sharing" target="_blank">Tải xuống Catalogue</a></li>
                         </ul>
                     </div>
 

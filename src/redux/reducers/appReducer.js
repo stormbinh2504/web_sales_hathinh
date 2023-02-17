@@ -1,16 +1,16 @@
 import { GLOBALTYPES } from '../actions/globalTypes'
-import { TYPE_USER } from './../../utils';
+import { PATH_NAME } from './../../utils';
 
 const initialState = {
-    typeUser: TYPE_USER.CUSTOMER,
+    menuActive: PATH_NAME.HOME,
 }
 
 const authReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "SET_TYPE_USER":
+        case "SET_MENU_ACTIVE":
             return {
                 ...state,
-                typeUser: action.data,
+                menuActive: action.data,
             };
         default:
             return state;

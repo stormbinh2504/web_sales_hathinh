@@ -103,6 +103,13 @@
                     font-size     : 13px;
                     letter-spacing: 1px;
                     text-transform: uppercase;
+                    cursor        : pointer;
+
+                    &.active {
+                        >a {
+                            color: $red_color;
+                        }
+                    }
 
                     &.nav-menu-submenu {
                         position: relative;
