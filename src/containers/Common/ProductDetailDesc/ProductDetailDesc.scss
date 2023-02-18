@@ -1,0 +1,42 @@
+@import "../../../styles/common";
+
+.product-short-detail {
+    .tab-nav {
+        margin       : 0;
+        border-bottom: 1px solid #DDD;
+        list-style   : none;
+        width        : 100%;
+
+        .tab-nav-item {
+            // height : 41px;
+            // border : 1px solid #DDD;
+            display: flex;
+
+            .tab-nav-wrap {
+                border       : 1px solid #DDD;
+                padding      : 10px;
+                border-bottom: none;
+                color        : #444;
+                font-size    : 14px;
+                font-weight  : bold;
+
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .info-company {
+        ul {
+            li {
+                span {
+                    i {
+                        color       : #2b2e91;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

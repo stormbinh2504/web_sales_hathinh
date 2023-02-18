@@ -19,6 +19,7 @@ import ProductCollections from './containers/ProductCollections/ProductCollectio
 import { PATH_NAME } from './utils/constants';
 import { history } from './redux/store'
 import ProductKeDriverIn from './containers/ProductCollections/ProductKeDriverIn/ProductKeDriverIn';
+import Contact from './containers/Contact/Contact';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -38,6 +39,9 @@ function App() {
             < div id="container-page-content" className="container-page-content ">
               <Route exact path={PATH_NAME.HOME} component={Home} />
               <Route exact path={PATH_NAME.COLLECTIONS} component={ProductCollections} />
+
+              <Route exact path={PATH_NAME.CONTACT} component={Contact} />
+
 
               <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
 
