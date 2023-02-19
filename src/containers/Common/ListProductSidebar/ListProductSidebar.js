@@ -65,10 +65,6 @@ const listProductSideBar = [
         title_lv1: "Kệ để hàng nhẹ",
         lv2: [
             {
-                title_lv2: "Kệ Rivet",
-                path: PATH_NAME.KE_RIVET
-            },
-            {
                 title_lv2: "Kệ V hoa",
                 path: PATH_NAME.KE_V_HOA
             },
@@ -147,68 +143,6 @@ const ListProductSidebar = () => {
                         )
                     })}
                 </ul>
-
-
-                {/* <ul>
-                    <li>
-                        <a href="#">Kệ để hàng nặng</a>
-                        <ul>
-                            <li><a href="/products/ke-drive-in">Kệ Drive-in</a></li>
-                            <li><a href="/products/ke-selective">Kệ Selective</a></li>
-                            <li><a href="/products/ke-double-deep">Kệ Double Deep</a></li>
-                            <li><a href="/products/ke-narrow-aisle">Kệ Narrow Aisle</a></li>
-                            <li><a href="/products/ke-pallet-di-dong">Kệ Pallet di động</a></li>
-                            <li><a href="/products/ke-con-lan-pallet-flow-rack">Kệ con lăn</a></li>
-                            <li><a href="/products/ke-push-back">Kệ Pushback</a></li>
-                            <li><a href="/products/ke-tay-do">Kệ tay đỡ</a></li>
-                            <li><a href="/products/ke-de-khuon-mould-rack">Kệ khuôn</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Kệ để hàng trung tải</a>
-                        <ul>
-                            <li><a href="/products/ke-trung-tai">Kệ trung tải</a></li>
-                            <li><a href="/products/ke-con-lan-trung-tai">Kệ con lăn trung tải</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="#">Kệ để hàng nhẹ</a>
-                        <ul>
-                            <li><a href="/products/ke-rivet">Kệ Rivet</a></li>
-
-                            <li><a href="/products/ke-v-hoa">Kệ V hoa</a></li>
-
-                            <li><a href="/products/ke-v-lo">Kệ V lỗ</a></li>
-                        </ul>
-                    </li>
-
-                    <li>
-                        <a href="/products/ke-ho-so-di-dong">Kệ hồ sơ di động</a>
-
-                    </li>
-
-                    <li>
-                        <a href="/products/ke-san-mezzanine">Kệ sàn (Mezzanine)</a>
-                    </li>
-
-                    <li>
-                        <a href="/products/ke-xep-chong">Kệ xếp chồng</a>
-                    </li>
-
-                    <li>
-                        <a href="/products/ke-de-hang-ban-tu-dong">Kệ để hàng tự động (Radio shuttle)</a>
-                    </li>
-
-                    <li>
-                        <a href="/products/ke-sieu-thi">Kệ siêu thị</a>
-                    </li>
-
-                    <li>
-                        <a href="/products/cac-san-pham-thiet-ke-theo-yeu-cau">Các sản phẩm thiết kế theo yêu cầu</a>
-                    </li>
-
-                </ul> */}
             </div >
         </div >
     )

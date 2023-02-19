@@ -82,11 +82,6 @@ const col_2 = [
     },
     {
         isTitleMain: false,
-        title: "Kệ Rivet",
-        path: PATH_NAME.KE_RIVET
-    },
-    {
-        isTitleMain: false,
         title: "Kệ V hoa",
         path: PATH_NAME.KE_V_HOA
     },
@@ -94,11 +89,6 @@ const col_2 = [
         isTitleMain: false,
         title: "Kệ V lỗ",
         path: PATH_NAME.KE_V_LO
-    },
-    {
-        isTitleMain: true,
-        title: "Kệ để hồ sơ di động",
-        path: PATH_NAME.KE_HO_SO_DI_DONG
     },
     {
         isTitleMain: true,
@@ -122,25 +112,6 @@ const col_3 = [
         isTitleMain: true,
         title: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI
-    },
-    {
-        isTitleMain: true,
-        title: "Các sản phẩm thiết kế theo yêu cầu",
-        path: PATH_NAME.CAC_SAN_PHAM_THIET_KE_THEO_YEU_CAU
-    },
-    {
-        isTitleMain: true,
-        title: "Các sản phẩm tiêu chuẩn",
-    },
-    {
-        isTitleMain: false,
-        title: "Cầu thang di động",
-        path: PATH_NAME.CAU_THANG_DI_DONG
-    },
-    {
-        isTitleMain: false,
-        title: "Xe thang di động",
-        path: PATH_NAME.XE_THANG_DI_DONG
     },
 
 ]

@@ -153,16 +153,8 @@ const Header = () => {
                                             <li className="sub-menu-item-lv2"><a href="/products/ke-v-lo"><div className="sub-menu-item-lv2-text">Kệ V lỗ</div></a></li>
 
                                             <li className="sub-menu-item-lv2"><a href="/products/ke-v-hoa"><div className="sub-menu-item-lv2-text">Kệ V hoa</div></a></li>
-
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-rivet"><div className="sub-menu-item-lv2-text">Kệ Rivet</div></a></li>
-
                                         </ul>
                                     </li>
-
-
-
-                                    <li className="sub-menu-item"><a href="/products/ke-ho-so-di-dong"><div className="sub-menu-item-text" >Kệ hồ sơ di động</div></a></li>
-
 
 
                                     <li className="sub-menu-item"><a href="/products/ke-san-mezzanine"><div className="sub-menu-item-text" >Kệ sàn Mezzanine</div></a></li>
@@ -180,8 +172,6 @@ const Header = () => {
                                     <li className="sub-menu-item"><a href="/products/ke-sieu-thi"><div className="sub-menu-item-text" >Kệ siêu thị</div></a></li>
 
 
-
-                                    <li className="sub-menu-item"><a href="/products/cac-san-pham-thiet-ke-theo-yeu-cau"><div className="sub-menu-item-text" >Thiết kế theo yêu cầu</div></a></li>
 
 
                                 </ul>
