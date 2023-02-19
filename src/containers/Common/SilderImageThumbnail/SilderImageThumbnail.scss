@@ -44,6 +44,9 @@
         }
 
         .fullscreen {
+            top      : 50%;
+            transform: translateY(-50%);
+
             .image-gallery-slide-wrapper {
                 .image-gallery-swipe {
 

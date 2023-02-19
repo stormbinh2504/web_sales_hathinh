@@ -227,6 +227,13 @@
 }
 
 
+// từ 575.98px trở xuống
+@include media-breakpoint-down(xs) {
+
+}
+
+
+// từ 767px trở xuống
 @include media-breakpoint-down(sm) {}
 
 
