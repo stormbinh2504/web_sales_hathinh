@@ -1,85 +1,24 @@
 @import "../../styles/common";
 
-.product-collections {
+.contact {
+
     .content {
-        .content-wrap {
+        margin: 20px 0px;
 
-            .collection-description {
-                background   : url("../../assets/images/product_collections/collection-banner-header.jpg");
-                position     : relative;
-                margin-bottom: 30px;
-
-                &::after {
-                    content   : '';
-                    position  : absolute;
-                    background: rgba(255, 255, 255, .9);
-                    top       : 0;
-                    left      : 0;
-                    right     : 0;
-                    bottom    : 0;
-                    z-index   : 1;
-                }
-
-                .container {
-                    z-index : 2;
-                    position: relative;
-
-                    h3 {
-                        color      : #444;
-                        font-weight: 700;
-                        line-height: 1.5;
-                        margin     : 0 0 20px 0;
-                        font-size  : 20px;
-
-                        span {
-                            color: #e74c3c;
-                        }
-                    }
-
-                    .rte-col3 {
-                        display: flex;
-
-                        .title-main {
-                            color    : #e74c3c;
-                            display  : flex;
-                            gap      : 10px;
-                            font-size: 22px;
-
-                            .active {
-                                cursor: pointer;
-                            }
-                        }
-
-                        .title-child {
-                            display  : flex;
-                            gap      : 10px;
-                            font-size: 20px;
-                            color    : #000000;
-
-                            .active {
-                                cursor: pointer;
-                            }
-                        }
-                    }
-                }
-
-            }
+        .div-map {
+            margin-bottom: 20px;
         }
-    }
-}
 
+        .info-company {
+            margin-bottom: 10px;
 
-// từ 767px trở xuống
-@include media-breakpoint-down(sm) {
-    .product-collections {
-        .content {
-            .content-wrap {
-                .collection-description {
-                    .container {
-                        .rte-col3 {
-                            flex-direction: column;
-                        }
-                    }
+            li {
+                font-size: 17px;
+                padding  : 5px 0px;
+
+                i {
+                    color       : #2b2e91;
+                    margin-right: 10px;
                 }
             }
         }

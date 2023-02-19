@@ -1,8 +1,10 @@
+import React, { useEffect } from 'react'
+
 import logo from './logo.svg';
 import './App.scss';
 import "../src/styles/styles.scss";
 import { Route, Switch, Redirect } from "react-router-dom";
-
+import $ from 'jquery';
 import { ConnectedRouter as Router } from 'connected-react-router';
 
 import { useSelector, useDispatch } from "react-redux";
@@ -20,6 +22,7 @@ import { PATH_NAME } from './utils/constants';
 import { history } from './redux/store'
 import ProductKeDriverIn from './containers/ProductCollections/ProductKeDriverIn/ProductKeDriverIn';
 import Contact from './containers/Contact/Contact';
+import ToolPhoneZaloChat from './containers/Common/ToolPhoneZaloChat/ToolPhoneZaloChat';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -28,6 +31,16 @@ let pathName = window.location.pathname
 function App() {
   const state = useSelector((state) => state);
   const { auth, app } = state
+
+  const scrollTopAnimated = () => {
+    $('#scrollToTop').on('click', function () {
+      $("html, body").animate({ scrollTop: 0 }, 1200);
+    })
+  }
+
+  useEffect(() => {
+    scrollTopAnimated()
+  }, []);
 
   return (
 
@@ -45,6 +58,11 @@ function App() {
 
               <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
 
+            </div>
+            <ToolPhoneZaloChat />
+            <div id="scrollToTop" className='item-center'>
+              <i class="fa fa-angle-double-up" aria-hidden="true">
+              </i>
             </div>
           </div>
         </Switch>

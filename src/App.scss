@@ -1,3 +1,5 @@
+@import "styles/common";
+
 .main {}
 
 ul,
@@ -45,5 +47,29 @@ button {
       position: relative;
       padding : 20px 0;
     }
+  }
+}
+
+#scrollToTop {
+  display         : block;
+  z-index         : 9999;
+  position        : fixed;
+  width           : 40px;
+  height          : 40px;
+  background-color: #333;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size       : 20px;
+  line-height     : 36px;
+  text-align      : center;
+  color           : #FFF;
+  top             : auto;
+  left            : auto;
+  right           : 30px;
+  bottom          : 50px;
+  cursor          : pointer;
+  border-radius   : 50%;
+
+  &:hover {
+    background: $red_color;
   }
 }
