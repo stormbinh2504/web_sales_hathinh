@@ -31,6 +31,27 @@
                 }
 
                 .image-gallery-fullscreen-button {}
+
+                .image-gallery-swipe {
+
+                    .image-gallery-image {
+                        height: 300px;
+                    }
+
+                }
+
+            }
+        }
+
+        .fullscreen {
+            .image-gallery-slide-wrapper {
+                .image-gallery-swipe {
+
+                    .image-gallery-image {
+                        height: auto !important;
+                    }
+
+                }
             }
         }
     }

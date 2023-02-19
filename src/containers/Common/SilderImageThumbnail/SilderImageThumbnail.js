@@ -36,7 +36,7 @@ const images = [
     }
 ];
 
-const SilderImageThumbnail = () => {
+const SilderImageThumbnail = ({ images }) => {
 
     const myImageRef = useRef(null);
 
@@ -95,7 +95,7 @@ const SilderImageThumbnail = () => {
             <ImageGallery
                 items={images}
                 infinite={true}
-                lazyLoad={true}
+                // lazyLoad={true}
                 autoPlay={true}
                 // slideDuration={3000}
                 showPlayButton={false}

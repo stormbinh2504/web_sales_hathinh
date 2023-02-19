@@ -5,7 +5,7 @@ import { setMenuActive } from '../../redux/actions'
 import * as actions from '../../redux/actions'
 import { PATH_NAME, setPathName } from '../../utils';
 import "./Header.scss"
-const src = "//theme.hstatic.net/200000335999/1000709370/14/logo.png?v=1455"
+import logo from "../../assets/images/company/logo.png"
 
 
 // let phone = 
@@ -46,7 +46,7 @@ const Header = () => {
                 <div className="row gutters-0 w-100">
                     <div className="col-12 col-ms-6 col-lg-3 navbar-logo item-center">
                         <div onClick={onRedirectHome}>
-                            <img className="img-logo" src={src} />
+                            <img className="img-logo" src={logo} />
                         </div>
                     </div>
                     <div className="header-extras col-12 col-ms-6 col-lg-9 ">
