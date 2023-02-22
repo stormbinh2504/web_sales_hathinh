@@ -12,7 +12,6 @@ import { toast, ToastContainer } from "react-toastify";
 import { injectStyle } from "react-toastify/dist/inject-style";
 import PrivateRouter from './containers/customRouter/PrivateRouter';
 import Header from './containers/Header/Header';
-import Sidebar from './containers/Sidebar/Sidebar';
 import Routes from './routes/Routes';
 import Home from './containers/Home/Home';
 import { TYPE_USER } from './utils';
@@ -23,6 +22,22 @@ import { history } from './redux/store'
 import ProductKeDriverIn from './containers/ProductCollections/ProductKeDriverIn/ProductKeDriverIn';
 import Contact from './containers/Contact/Contact';
 import ToolPhoneZaloChat from './containers/Common/ToolPhoneZaloChat/ToolPhoneZaloChat';
+import ProductKeSelective from './containers/ProductCollections/ProductKeSelective/ProductKeSelective';
+import ProductDoubleDeep from './containers/ProductCollections/ProductDoubleDeep/ProductDoubleDeep';
+import ProductNarrowAisle from './containers/ProductCollections/ProductNarrowAisle/ProductNarrowAisle';
+import ProductKePalletDiDong from './containers/ProductCollections/ProductKePalletDiDong/ProductKePalletDiDong';
+import ProductKeConLanPalletFlowRack from './containers/ProductCollections/ProductKeConLanPalletFlowRack/ProductKeConLanPalletFlowRack';
+import ProductKePushBack from './containers/ProductCollections/ProductKePushBack/ProductKePushBack';
+import ProductKeTayDo from './containers/ProductCollections/ProductKeTayDo/ProductKeTayDo';
+import ProductKeDeKhuonMouldRack from './containers/ProductCollections/ProductKeDeKhuonMouldRack/ProductKeDeKhuonMouldRack';
+import ProductKeTrungTai from './containers/ProductCollections/ProductKeTrungTai/ProductKeTrungTai';
+import ProductKeConLanTrungTai from './containers/ProductCollections/ProductKeConLanTrungTai/ProductKeConLanTrungTai';
+import ProductKeVLo from './containers/ProductCollections/ProductKeVLo/ProductKeVLo';
+import ProductKeVHoa from './containers/ProductCollections/ProductKeVHoa/ProductKeVHoa';
+import ProductKeSanMezzanine from './containers/ProductCollections/ProductKeSanMezzanine/ProductKeSanMezzanine';
+import ProductKeXepChong from './containers/ProductCollections/ProductKeXepChong/ProductKeXepChong';
+import ProductKeDeBanHangTuDong from './containers/ProductCollections/ProductKeDeBanHangTuDong/ProductKeDeBanHangTuDong';
+import ProductKeSieuthi from './containers/ProductCollections/ProductKeSieuthi/ProductKeSieuthi';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -57,6 +72,22 @@ function App() {
 
 
               <Route exact path={PATH_NAME.KE_DRIVER_IN} component={ProductKeDriverIn} />
+              <Route exact path={PATH_NAME.KE_SELECTIVE} component={ProductKeSelective} />
+              <Route exact path={PATH_NAME.KE_DOUBLE_DEEP} component={ProductDoubleDeep} />
+              <Route exact path={PATH_NAME.KE_NARROW_AISLE} component={ProductNarrowAisle} />
+              <Route exact path={PATH_NAME.KE_PALLET_DI_DONG} component={ProductKePalletDiDong} />
+              <Route exact path={PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK} component={ProductKeConLanPalletFlowRack} />
+              <Route exact path={PATH_NAME.KE_PUSH_BACK} component={ProductKePushBack} />
+              <Route exact path={PATH_NAME.KE_TAY_DO} component={ProductKeTayDo} />
+              <Route exact path={PATH_NAME.KE_DE_KHUON_MOULD_RACK} component={ProductKeDeKhuonMouldRack} />
+              <Route exact path={PATH_NAME.KE_TRUNG_TAI} component={ProductKeTrungTai} />
+              <Route exact path={PATH_NAME.KE_CON_LAN_TRUNG_TAI} component={ProductKeConLanTrungTai} />
+              <Route exact path={PATH_NAME.KE_V_LO} component={ProductKeVLo} />
+              <Route exact path={PATH_NAME.KE_V_HOA} component={ProductKeVHoa} />
+              <Route exact path={PATH_NAME.KE_SAN_MEZZANINE} component={ProductKeSanMezzanine} />
+              <Route exact path={PATH_NAME.KE_XEP_CHONG} component={ProductKeXepChong} />
+              <Route exact path={PATH_NAME.KE_DE_HANG_BAN_TU_DONG} component={ProductKeDeBanHangTuDong} />
+              <Route exact path={PATH_NAME.KE_SIEU_THI} component={ProductKeSieuthi} />
 
             </div>
             <ToolPhoneZaloChat />

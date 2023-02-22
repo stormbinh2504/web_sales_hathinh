@@ -75,10 +75,6 @@ const listProductSideBar = [
         ]
     },
     {
-        title_lv1: "Kệ để hồ sơ di động",
-        path: PATH_NAME.KE_HO_SO_DI_DONG
-    },
-    {
         title_lv1: "Kệ sàn (Mezzanine)",
         path: PATH_NAME.KE_SAN_MEZZANINE
     },
@@ -93,10 +89,6 @@ const listProductSideBar = [
     {
         title_lv1: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI
-    },
-    {
-        title_lv1: "Các sản phẩm thiết kế theo yêu cầu",
-        path: PATH_NAME.CAC_SAN_PHAM_THIET_KE_THEO_YEU_CAU
     },
 ]
 

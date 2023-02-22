@@ -8,7 +8,8 @@ import "./ProductDesc.scss"
 
 
 
-const ProductDesc = ({ listPageTitle }) => {
+const ProductDesc = ({ productDesc }) => {
+    const { title } = productDesc
 
     const history = useHistory()
     const dispatch = useDispatch()
@@ -16,7 +17,7 @@ const ProductDesc = ({ listPageTitle }) => {
 
     return (
         <div className='product-desc'>
-            <h2 class="product-title">Kệ Drive-In</h2>
+            <h2 class="product-title">{title}</h2>
             <div class="product-status">Tình trạng: Sản xuất theo đơn đặt hàng</div>
             <div class="product-price">Giá : Theo thiết kế</div>
             <div class="clear"></div>

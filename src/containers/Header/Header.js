@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link, useHistory, withRouter } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux";
 import { setMenuActive } from '../../redux/actions'
@@ -6,6 +6,7 @@ import * as actions from '../../redux/actions'
 import { PATH_NAME, setPathName } from '../../utils';
 import "./Header.scss"
 import logo from "../../assets/images/company/logo.png"
+import MenuSidebar from '../MenuSidebar/MenuSidebar';
 
 
 // let phone = 
@@ -16,6 +17,7 @@ const Header = () => {
     const { auth, app } = state
     const { menuActive } = app
 
+    const [isOpenMenu, setIsOpenMenu] = useState(false)
     const onRedirectHome = () => {
         history.push("/");
     }
@@ -40,13 +42,31 @@ const Header = () => {
         };
     }, []);
 
+    const onRedirectByPathname = (path) => {
+        history.push(path);
+    }
+
+    const checkActiveMenu = (key) => {
+        let pathnameCurent = window.location.pathname
+        if (pathnameCurent === key) {
+            return true
+        }
+        return false
+    }
+
     return (
         <div className='header'>
+            {isOpenMenu && <MenuSidebar
+                setIsOpenMenu={setIsOpenMenu}
+            />}
             <div id="container-header" className="container container-header">
                 <div className="row gutters-0 w-100">
                     <div className="col-12 col-ms-6 col-lg-3 navbar-logo item-center">
-                        <div onClick={onRedirectHome}>
+                        <div className='div-img-logo' onClick={onRedirectHome}>
                             <img className="img-logo" src={logo} />
+                        </div>
+                        <div className="header-icon-bars" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                            <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="header-extras col-12 col-ms-6 col-lg-9 ">
@@ -94,6 +114,7 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
 
@@ -101,11 +122,11 @@ const Header = () => {
                 <div id="primary-menu" className="menu style-2 center">
                     <div className="container clearfix">
                         <ul className="nav-menu" >
-                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.HOME ? "active" : "")}>
-                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.HOME))}>Trang chủ</a>
+                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.HOME) ? "active" : "")}>
+                                <a onClick={() => onRedirectByPathname(PATH_NAME.HOME)}>Trang chủ</a>
                             </li>
-                            <li className={"nav-menu-item nav-menu-submenu " + (menuActive === PATH_NAME.COLLECTIONS ? "active" : "")} >
-                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.COLLECTIONS))} className="nav-menu-link" >Sản phẩm</a>
+                            <li className={"nav-menu-item nav-menu-submenu " + (checkActiveMenu(PATH_NAME.COLLECTIONS) ? "active" : "")} >
+                                <a onClick={() => onRedirectByPathname(PATH_NAME.COLLECTIONS)} className="nav-menu-link" >Sản phẩm</a>
                                 <ul className="sub-menu" >
                                     <li className="sub-menu-item">
                                         <a href="#">
@@ -191,7 +212,7 @@ const Header = () => {
 
                 </div>
             </div>
-        </div>
+        </div >
     )
 }
 

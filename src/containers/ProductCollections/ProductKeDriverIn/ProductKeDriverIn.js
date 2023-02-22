@@ -81,15 +81,25 @@ const ProductKeDriverIn = () => {
                                                     />
                                                 </div>
                                                 <div className="col-12 col-md-6">
-                                                    <ProductDesc />
+                                                    <ProductDesc
+                                                        productDesc={{
+                                                            title: "Kệ Drive-In"
+                                                        }}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
                                         <ProductShortDesc
-
+                                            listDesc={[
+                                                "Giải pháp này cho chi phí đầu tư thấp nhưng sức chứa pallet trong kho hàng cao hơn nhiều.",
+                                                "Sử dụng được tối đa không gian kho chứa hàng",
+                                                "Thuận lợi cho việc sử dụng đa dạng các loại xe nâng.",
+                                                "Có thể thiết kế với giải pháp “Last in / First out” hoặc First in / First out tùy vào nhu cầu kho chứa hàng hoặc khi lưu kho với một lượng lớn sản phẩm cùng chủng loại.",
+                                                "Qua thực tế nhiều năm cung cấp cho thị trường Việt Nam, hệ thống kệ này của MYTEK rất phù hợp với nhiều lĩnh vực công nghiệp gồm các ngành công nghiệp cơ bản, thực phẩm, và đặc biệt ngành công nghiệp kho lạnh."
+                                            ]}
                                         />
                                         <ProductDetailDesc>
-                                            <div class="tab-content clearfix ui-tabs-panel ui-widget-content ui-corner-bottom" id="tabs-1" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">
+                                            <div class="tab-content" id="tabs-1" aria-labelledby="ui-id-1" role="tabpanel" aria-expanded="true" aria-hidden="false">
                                                 <p>
                                                 </p><p>
                                                 </p><p>

@@ -88,16 +88,16 @@ const Footer = () => {
 
                     <div class="row row-flex clearfix contact_prefooter">
                         <div class="col-6 col-md-3 text-center">
-                            <a class="icon-call icon-pre-footer">
-                                <i className="fa fa-phone" aria-hidden="true"></i>
-                            </a>
-                            <h4><a href="/pages/lien-he">Hotline: 0903 229 005</a></h4>
-                        </div>
-                        <div class="col-6 col-md-3 text-center">
                             <a class="icon-line-mail icon-pre-footer">
                                 <i className="fa fa-envelope-o" aria-hidden="true"></i>
                             </a>
                             <h4><a href="/pages/lien-he">sales@giakedehang.vn</a></h4>
+                        </div>
+                        <div class="col-6 col-md-3 text-center">
+                            <a class="icon-call icon-pre-footer">
+                                <i className="fa fa-phone" aria-hidden="true"></i>
+                            </a>
+                            <h4><a href="/pages/lien-he">Hotline: 0903 229 005</a></h4>
                         </div>
                         <div class="col-6 col-md-3 text-center">
                             <a class="icon-user2 icon-pre-footer">
