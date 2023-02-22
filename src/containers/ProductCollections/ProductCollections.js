@@ -6,6 +6,14 @@ import { PATH_NAME } from '../../utils';
 import "./ProductCollections.scss"
 import PageTitle from './../Common/PageTitle/PageTitle';
 import { setMenuActive } from '../../redux/actions'
+import product_ke_driver_in_img1 from "../../assets/images/product_collections/product_ke_driver_in/img1.jpg"
+import product_ke_driver_in_img2 from "../../assets/images/product_collections/product_ke_driver_in/img2.jpg"
+
+import product_ke_selective_img1 from "../../assets/images/product_collections/product_ke_selective/img1.jpg"
+import product_ke_selective_img2 from "../../assets/images/product_collections/product_ke_selective/img2.jpg"
+
+import product_ke_double_deep_img1 from "../../assets/images/product_collections/product_ke_double_deep/img1.jpg"
+import product_ke_double_deep_img2 from "../../assets/images/product_collections/product_ke_double_deep/img2.jpg"
 
 
 const col_1 = [
@@ -164,6 +172,73 @@ const RenderCol = ({ col }) => {
         </div>
     )
 }
+
+
+const listProDuct = [
+    {
+        title: "Kệ Drive-in",
+        path: PATH_NAME.KE_DRIVER_IN,
+        listImages: [product_ke_driver_in_img1, product_ke_driver_in_img2],
+        productDesc: "Giải pháp này cho chi phí đầu tư thấp nhưng sức chứa pallet trong kho hàng cao hơn nhiều. Sử dụng được tối đa không gian kho chứa hàng thuận lợi cho...",
+    },
+    {
+        title: "Kệ Selective",
+        path: PATH_NAME.KE_SELECTIVE,
+        listImages: [product_ke_selective_img1, product_ke_selective_img2],
+        productDesc: "Cho phép sử dụng tất cả pallet hàng dễ dàng điều chỉnh thanh đỡ ngang (beam) phù hợp với bất kỳ kích thước hay trọng lượng pallet hàng hóa, có thể ứng...",
+    },
+    {
+        title: "Kệ Double Deep",
+        path: PATH_NAME.KE_DOUBLE_DEEP,
+        listImages: [product_ke_double_deep_img1, product_ke_double_deep_img2],
+        productDesc: "Sức chứa hàng hóa trong kho cao hơn so với kệ Selective tải trọng hàng hóa từ 1000kg-6000kg/ tầng. Vốn đầu tư cơ bản ước tính ngang bẳng với kệ...",
+    },
+]
+
+const RenderProduct = ({ data }) => {
+    const { title, path, productDesc, listImages } = data
+    const history = useHistory()
+    const dispatch = useDispatch()
+
+    const onRedirectByPathname = (path) => {
+        history.push(path);
+    }
+
+    return (
+        <div class="col-xs-12 col-sm-4">
+            <div class="product clearfix">
+                <div class="product-image">
+                    {listImages && listImages.length > 0 && listImages.map((item, index) => {
+                        if (listImages.length > 1) {
+                            return (
+                                <a class={"block-image " + `block-image${index + 1}`} onClick={(e) => onRedirectByPathname(path)}>
+                                    <img src={item} />
+                                </a>
+                            )
+                        } else {
+                            return (
+                                <a class={"block-image "} onClick={(e) => onRedirectByPathname(path)}>
+                                    <img src={item} />
+                                </a>
+                            )
+                        }
+                    })}
+                </div>
+                <div class="product-content text-center">
+                    <div class="product-title">
+                        <h3><a onClick={(e) => onRedirectByPathname(path)}>{title}</a></h3>
+                    </div>
+                    <div class="product-desc text-center text3line">
+                        {productDesc}
+                    </div>
+                    <div class="view-all text-center">
+                        <a class="btn btn-block" href="/products/ke-drive-in">Chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
 const ProductCollections = () => {
     const history = useHistory()
     const dispatch = useDispatch()
@@ -196,6 +271,20 @@ const ProductCollections = () => {
                                     col={col_3}
                                 />
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-product">
+                    <div className="container">
+                        <div className="row">
+                            {listProDuct && listProDuct.length > 0 && listProDuct.map((item, index) => {
+                                return (
+                                    <RenderProduct
+                                        data={item}
+                                    />
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

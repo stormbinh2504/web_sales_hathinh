@@ -101,6 +101,11 @@ const ListProductSidebar = () => {
     const dispatch = useDispatch()
 
 
+    const onRedirectByPathname = (path) => {
+        history.push(path);
+    }
+
+
     return (
         <div className='list-product-sidebar'>
             <div class="content">
@@ -110,13 +115,13 @@ const ListProductSidebar = () => {
                         return (
                             <li className='item-lv1'>
                                 {item.path &&
-                                    <a onClick={() => dispatch(setMenuActive(item.path))} className='title-lv1 active' href="#">
+                                    <a onClick={(e) => onRedirectByPathname(item.path)} className='title-lv1 active'>
                                         <i class="fa fa-caret-right" aria-hidden="true"></i>
                                         {item.title_lv1}
                                     </a>
                                 }
                                 {!item.path &&
-                                    <a className='title-lv1' href="#">
+                                    <a className='title-lv1'>
                                         <i class="fa fa-caret-right" aria-hidden="true"></i>
                                         {item.title_lv1}
                                     </a>
@@ -125,7 +130,7 @@ const ListProductSidebar = () => {
                                     {item.lv2 && item.lv2.length > 0 && item.lv2.map((item2, index) => {
                                         return (
                                             <li className='item-lv2'>
-                                                <a className='title-lv2' onClick={() => dispatch(setMenuActive(item2.path))}>- {item2.title_lv2}</a>
+                                                <a className='title-lv2' onClick={(e) => onRedirectByPathname(item2.path)}>- {item2.title_lv2}</a>
                                             </li>
                                         )
                                     })

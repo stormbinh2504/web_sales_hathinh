@@ -13,10 +13,18 @@
         }
 
         .ps-sidebar-container {
+            background-color: #fff;
+
             .ps-menu-root {
                 .ps-menuitem-root {
                     &.ps-active {
                         color: red;
+                    }
+
+                    .ps-menu-button {
+                        .ps-menu-icon {
+                            font-size: 20px;
+                        }
                     }
                 }
             }
