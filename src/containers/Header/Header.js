@@ -197,13 +197,13 @@ const Header = () => {
 
                                 </ul>
                             </li>
-                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.BLOGS ? "active" : "")}>
+                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.BLOGS) ? "active" : "")}>
                                 <a href='' onClick={() => onRedirectByPathname(PATH_NAME.BLOGS)}>Dự án hoàn thành</a>
                             </li>
-                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.ABOUT_OUR ? "active" : "")}>
+                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.ABOUT_OUR) ? "active" : "")}>
                                 <a href='' onClick={() => onRedirectByPathname(PATH_NAME.ABOUT_OUR)}>Về chúng tôi</a>
                             </li>
-                            <li className={"nav-menu-item " + (menuActive === PATH_NAME.CONTACT ? "active" : "")}>
+                            <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.CONTACT) ? "active" : "")}>
                                 <a href='' onClick={() => onRedirectByPathname(PATH_NAME.CONTACT)}>Liên hệ</a>
                             </li>
                             <li className={"nav-menu-item "}><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view?usp=sharing" target="_blank">Tải xuống Catalogue</a></li>
