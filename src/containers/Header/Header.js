@@ -65,7 +65,7 @@ const Header = () => {
                         <div className='div-img-logo' onClick={onRedirectHome}>
                             <img className="img-logo" src={logo} />
                         </div>
-                        <div className="header-icon-bars" onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
+                        <div className="header-icon-bars" href='' onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -123,10 +123,10 @@ const Header = () => {
                     <div className="container clearfix">
                         <ul className="nav-menu" >
                             <li className={"nav-menu-item " + (checkActiveMenu(PATH_NAME.HOME) ? "active" : "")}>
-                                <a onClick={() => onRedirectByPathname(PATH_NAME.HOME)}>Trang chủ</a>
+                                <a href='' onClick={() => onRedirectByPathname(PATH_NAME.HOME)}>Trang chủ</a>
                             </li>
                             <li className={"nav-menu-item nav-menu-submenu " + (checkActiveMenu(PATH_NAME.COLLECTIONS) ? "active" : "")} >
-                                <a onClick={() => onRedirectByPathname(PATH_NAME.COLLECTIONS)} className="nav-menu-link" >Sản phẩm</a>
+                                <a href='' onClick={() => onRedirectByPathname(PATH_NAME.COLLECTIONS)} className="nav-menu-link" >Sản phẩm</a>
                                 <ul className="sub-menu" >
                                     <li className="sub-menu-item">
                                         <a href="#">
@@ -136,15 +136,15 @@ const Header = () => {
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2">
-                                            <li className="sub-menu-item-lv2"> <a href="/products/ke-drive-in"><div className="sub-menu-item-lv2-text" >Kệ Drive-in</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-selective"><div className="sub-menu-item-lv2-text">Kệ Selective</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-double-deep"><div className="sub-menu-item-lv2-text">Kệ Double Deep</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-narrow-aisle"><div className="sub-menu-item-lv2-text">Kệ Narrow Aisle</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-pallet-di-dong"><div className="sub-menu-item-lv2-text">Kệ Pallet di động</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-con-lan-pallet-flow-rack"><div className="sub-menu-item-lv2-text">Kệ con lăn</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-push-back"><div className="sub-menu-item-lv2-text">Kệ Push back</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-tay-do"><div className="sub-menu-item-lv2-text">Kệ tay đỡ</div></a></li>
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-de-khuon-mould-rack"><div className="sub-menu-item-lv2-text">Kệ để khuôn</div></a></li>
+                                            <li className="sub-menu-item-lv2"> <a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_DRIVER_IN)}><div className="sub-menu-item-lv2-text" >Kệ Drive-in</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_SELECTIVE)}><div className="sub-menu-item-lv2-text">Kệ Selective</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_DOUBLE_DEEP)}><div className="sub-menu-item-lv2-text">Kệ Double Deep</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_NARROW_AISLE)}><div className="sub-menu-item-lv2-text">Kệ Narrow Aisle</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_PALLET_DI_DONG)}><div className="sub-menu-item-lv2-text">Kệ Pallet di động</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_CON_LAN_PALLET_FLOW_RACK)}><div className="sub-menu-item-lv2-text">Kệ con lăn</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_PUSH_BACK)}><div className="sub-menu-item-lv2-text">Kệ Push back</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_TAY_DO)}><div className="sub-menu-item-lv2-text">Kệ tay đỡ</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_DE_KHUON_MOULD_RACK)}><div className="sub-menu-item-lv2-text">Kệ để khuôn</div></a></li>
                                         </ul>
                                     </li>
 
@@ -156,9 +156,9 @@ const Header = () => {
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2" >
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-trung-tai"><div className="sub-menu-item-lv2-text" >Kệ trung tải</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_TRUNG_TAI)}><div className="sub-menu-item-lv2-text" >Kệ trung tải</div></a></li>
 
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-con-lan-trung-tai"><div className="sub-menu-item-lv2-text" >Kệ con lăn trung tải</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_CON_LAN_TRUNG_TAI)}><div className="sub-menu-item-lv2-text" >Kệ con lăn trung tải</div></a></li>
 
                                         </ul>
                                     </li>
@@ -171,26 +171,26 @@ const Header = () => {
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2">
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-v-lo"><div className="sub-menu-item-lv2-text">Kệ V lỗ</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_V_LO)}><div className="sub-menu-item-lv2-text">Kệ V lỗ</div></a></li>
 
-                                            <li className="sub-menu-item-lv2"><a href="/products/ke-v-hoa"><div className="sub-menu-item-lv2-text">Kệ V hoa</div></a></li>
+                                            <li className="sub-menu-item-lv2"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_V_HOA)}><div className="sub-menu-item-lv2-text">Kệ V hoa</div></a></li>
                                         </ul>
                                     </li>
 
 
-                                    <li className="sub-menu-item"><a href="/products/ke-san-mezzanine"><div className="sub-menu-item-text" >Kệ sàn Mezzanine</div></a></li>
+                                    <li className="sub-menu-item"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_SAN_MEZZANINE)}><div className="sub-menu-item-text" >Kệ sàn Mezzanine</div></a></li>
 
 
 
-                                    <li className="sub-menu-item"><a href="/products/ke-xep-chong"><div className="sub-menu-item-text" >Kệ xếp chồng</div></a></li>
+                                    <li className="sub-menu-item"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_XEP_CHONG)}><div className="sub-menu-item-text" >Kệ xếp chồng</div></a></li>
 
 
 
-                                    <li className="sub-menu-item"><a href="/products/ke-de-hang-ban-tu-dong"><div className="sub-menu-item-text" >Kệ để hàng tự động</div></a></li>
+                                    <li className="sub-menu-item"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_DE_HANG_BAN_TU_DONG)}><div className="sub-menu-item-text" >Kệ để hàng tự động</div></a></li>
 
 
 
-                                    <li className="sub-menu-item"><a href="/products/ke-sieu-thi"><div className="sub-menu-item-text" >Kệ siêu thị</div></a></li>
+                                    <li className="sub-menu-item"><a href='' onClick={() => onRedirectByPathname(PATH_NAME.KE_SIEU_THI)}><div className="sub-menu-item-text" >Kệ siêu thị</div></a></li>
 
 
 
@@ -198,13 +198,13 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className={"nav-menu-item " + (menuActive === PATH_NAME.BLOGS ? "active" : "")}>
-                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.BLOGS))}>Dự án hoàn thành</a>
+                                <a href='' onClick={() => onRedirectByPathname(PATH_NAME.BLOGS)}>Dự án hoàn thành</a>
                             </li>
                             <li className={"nav-menu-item " + (menuActive === PATH_NAME.ABOUT_OUR ? "active" : "")}>
-                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.ABOUT_OUR))}>Về chúng tôi</a>
+                                <a href='' onClick={() => onRedirectByPathname(PATH_NAME.ABOUT_OUR)}>Về chúng tôi</a>
                             </li>
                             <li className={"nav-menu-item " + (menuActive === PATH_NAME.CONTACT ? "active" : "")}>
-                                <a onClick={() => dispatch(setMenuActive(PATH_NAME.CONTACT))}>Liên hệ</a>
+                                <a href='' onClick={() => onRedirectByPathname(PATH_NAME.CONTACT)}>Liên hệ</a>
                             </li>
                             <li className={"nav-menu-item "}><a href="https://drive.google.com/file/d/1nwUznZ8poREFhz_LWFjEp9P-uIa6Q5NB/view?usp=sharing" target="_blank">Tải xuống Catalogue</a></li>
                         </ul>
