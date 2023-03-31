@@ -45,7 +45,7 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
               active={checkActiveMenu(PATH_NAME.HOME)}
-              icon={<i class="fa fa-home" aria-hidden="true"></i>}
+              icon={<i className="fa fa-home" aria-hidden="true"></i>}
               onClick={(e) => onRedirectByPathname(PATH_NAME.HOME)}
             >
               Trang chủ
@@ -53,7 +53,7 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           </Menu>
           <SubMenu
             label="Sản phẩm"
-            icon={<i class="fa fa-list-alt" aria-hidden="true"></i>}
+            icon={<i className="fa fa-list-alt" aria-hidden="true"></i>}
             defaultOpen={true}
           >
             <SubMenu label="Kệ để hàng nặng">
@@ -175,7 +175,7 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
               active={checkActiveMenu(PATH_NAME.BLOGS)}
-              icon={<i class="fa fa-trophy" aria-hidden="true"></i>}
+              icon={<i className="fa fa-trophy" aria-hidden="true"></i>}
               onClick={(e) => onRedirectByPathname(PATH_NAME.BLOGS)}
             >
               Dự án hoàn thành
@@ -184,7 +184,7 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
               active={checkActiveMenu(PATH_NAME.ABOUT_OUR)}
-              icon={<i class="fa fa-users" aria-hidden="true"></i>}
+              icon={<i className="fa fa-users" aria-hidden="true"></i>}
               onClick={(e) => onRedirectByPathname(PATH_NAME.ABOUT_OUR)}
             >
               Về chúng tôi
@@ -193,7 +193,7 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
           <Menu iconShape="circle" rootStyles={{ paddingLeft: "16px" }}>
             <MenuItem
               active={checkActiveMenu(PATH_NAME.CONTACT)}
-              icon={<i class="fa fa-comments" aria-hidden="true"></i>}
+              icon={<i className="fa fa-comments" aria-hidden="true"></i>}
               onClick={(e) => onRedirectByPathname(PATH_NAME.CONTACT)}
             >
               Liên hệ

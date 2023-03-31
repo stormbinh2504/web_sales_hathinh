@@ -66,7 +66,7 @@ const Header = () => {
                             <img className="img-logo" src={logo} />
                         </div>
                         <div className="header-icon-bars"  onClick={() => { setIsOpenMenu(!isOpenMenu) }}>
-                            <i class="fa fa-bars" aria-hidden="true"></i>
+                            <i className="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div className="header-extras col-12 col-ms-6 col-lg-10 ">
@@ -132,7 +132,7 @@ const Header = () => {
                                         <a >
                                             <div className="sub-menu-item-text" >Kệ để hàng nặng</div>
                                             <div className="sub-menu-item-icon">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                <i className="fa fa-angle-right" aria-hidden="true"></i>
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2">
@@ -152,7 +152,7 @@ const Header = () => {
                                         <a >
                                             <div className="sub-menu-item-text" >Kệ để hàng trung tải</div>
                                             <div className="sub-menu-item-icon">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                <i className="fa fa-angle-right" aria-hidden="true"></i>
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2" >
@@ -167,7 +167,7 @@ const Header = () => {
                                         <a >
                                             <div className="sub-menu-item-text" >Kệ để hàng nhẹ </div>
                                             <div className="sub-menu-item-icon">
-                                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                                <i className="fa fa-angle-right" aria-hidden="true"></i>
                                             </div>
                                         </a>
                                         <ul className="sub-menu-lv2">

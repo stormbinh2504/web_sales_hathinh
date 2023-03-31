@@ -60,17 +60,17 @@ const FeatureBox = ({ data }) => {
     const { image, title, subtitle, link } = data
     return (
         <div className="col-12 col-md-4">
-            <div class="feature-box media-box">
-                <div class="fbox-media">
+            <div className="feature-box media-box">
+                <div className="fbox-media">
                     <a href={link}>
                         <img src={image} />
                     </a>
                 </div>
-                <div class="fbox-desc">
+                <div className="fbox-desc">
                     <h3>{title}
                         {subtitle && subtitle.length > 0 && subtitle.map((item, index) => {
 
-                            return (<span class="subtitle">- {item}</span>)
+                            return (<span className="subtitle">- {item}</span>)
                         })}
                     </h3>
                     <p></p>
@@ -84,9 +84,9 @@ const HomeBanner = () => {
     return (
         <div id="home-banner" className="home-banner">
             <div className="container">
-                <div class="section-heading text-center">
-                    <h2 class="section-title">Giá kệ để hàng Tân Trường Phát Vina</h2>
-                    <p class="section-desc"></p>
+                <div className="section-heading text-center">
+                    <h2 className="section-title">Giá kệ để hàng Tân Trường Phát Vina</h2>
+                    <p className="section-desc"></p>
                 </div>
                 <div className="row">
                     {listFeatureBox && listFeatureBox.length > 0 && listFeatureBox.map((item, index) => {
@@ -97,9 +97,9 @@ const HomeBanner = () => {
                         )
                     })}
                 </div>
-                <div class="col-xs-12">
-                    <div class="view-all text-center">
-                        <a class="btn" href="/collections/gia-ke-vina">TẤT CẢ SẢN PHẨM</a>
+                <div className="col-xs-12">
+                    <div className="view-all text-center">
+                        <a className="btn" href="/collections/gia-ke-vina">TẤT CẢ SẢN PHẨM</a>
                     </div>
                 </div>
             </div>

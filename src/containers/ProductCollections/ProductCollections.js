@@ -175,7 +175,7 @@ const RenderCol = ({ col }) => {
                     return (
                         <div className='title-main'>
                             {/* <span className='item-center'>
-                                <i class="fa fa-caret-right" aria-hidden="true"></i>
+                                <i className="fa fa-caret-right" aria-hidden="true"></i>
                             </span> */}
                             ►
                             {
@@ -330,9 +330,9 @@ const RenderProduct = ({ data }) => {
     }
 
     return (
-        <div class="col-12 col-ms-6 col-md-4">
-            <div class="product clearfix">
-                <div class="product-image">
+        <div className="col-12 col-ms-6 col-md-4">
+            <div className="product clearfix">
+                <div className="product-image">
                     {listImages && listImages.length > 0 && listImages.map((item, index) => {
                         if (listImages.length > 1) {
                             return (
@@ -349,15 +349,15 @@ const RenderProduct = ({ data }) => {
                         }
                     })}
                 </div>
-                <div class="product-content text-center">
-                    <div class="product-title">
+                <div className="product-content text-center">
+                    <div className="product-title">
                         <h3><a href="" onClick={(e) => onRedirectByPathname(path)}>{title}</a></h3>
                     </div>
-                    <div class="product-desc text-center text3line">
+                    <div className="product-desc text-center text3line">
                         {productDesc}
                     </div>
-                    <div class="view-all text-center">
-                        <a class="btn btn-block" href="" onClick={(e) => onRedirectByPathname(path)} >Chi tiết</a>
+                    <div className="view-all text-center">
+                        <a className="btn btn-block" href="" onClick={(e) => onRedirectByPathname(path)} >Chi tiết</a>
                     </div>
                 </div>
             </div>
@@ -383,9 +383,9 @@ const ProductCollections = () => {
                     <div className="collection-description" >
                         <div className="container">
                             <h3>
-                                <span >Tân Trường Phát Vina LÀ NHÀ SẢN XUẤT GIÁ KỆ CHỨA HÀNG CHUYÊN NGHIỆP</span>
+                                <span className="text-uppercase" >Tân Trường Phát Vina LÀ NHÀ SẢN XUẤT GIÁ KỆ CHỨA HÀNG CHUYÊN NGHIỆP</span>
                             </h3>
-                            <div class="rte-col3">
+                            <div className="rte-col3">
                                 <RenderCol
                                     col={col_1}
                                 />
@@ -400,7 +400,7 @@ const ProductCollections = () => {
                     </div>
                 </div>
 
-                <div class="list-product">
+                <div className="list-product">
                     <div className="container">
                         <div className="row">
                             {listProDuct && listProDuct.length > 0 && listProDuct.map((item, index) => {

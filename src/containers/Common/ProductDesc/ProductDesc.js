@@ -18,22 +18,22 @@ const ProductDesc = ({ productDesc }) => {
 
     return (
         <div className='product-desc'>
-            <h2 class="product-title">{title}</h2>
-            <div class="product-status">Tình trạng: Sản xuất theo đơn đặt hàng</div>
-            <div class="product-price">Giá : Theo thiết kế</div>
-            <div class="clear"></div>
+            <h2 className="product-title">{title}</h2>
+            <div className="product-status">Tình trạng: Sản xuất theo đơn đặt hàng</div>
+            <div className="product-price">Giá : Theo thiết kế</div>
+            <div className="clear"></div>
 
-            <div class="btn-wrap">
-                <a class="phone item-center" href="tel:0982535391">
+            <div className="btn-wrap">
+                <a className="phone item-center" href="tel:0982535391">
                     <img src={product_desc_call} alt="icon" />
                     Gọi ngay 0982 535 391
                 </a>
                 <div className="chat-require">
-                    <a class="chat item-center" href="https://zalo.me/0982535391" target="_blank">
+                    <a className="chat item-center" href="https://zalo.me/0982535391" target="_blank">
                         <img src={product_desc_zalo} alt="icon" />
                         Chat
                     </a>
-                    <a class="require item-center" href="/pages/lien-he" >
+                    <a className="require item-center" href="/pages/lien-he" >
                         Yêu cầu tư vấn
                     </a>
                 </div>
