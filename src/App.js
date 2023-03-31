@@ -38,6 +38,7 @@ import ProductKeSanMezzanine from './containers/ProductCollections/ProductKeSanM
 import ProductKeXepChong from './containers/ProductCollections/ProductKeXepChong/ProductKeXepChong';
 import ProductKeDeBanHangTuDong from './containers/ProductCollections/ProductKeDeBanHangTuDong/ProductKeDeBanHangTuDong';
 import ProductKeSieuthi from './containers/ProductCollections/ProductKeSieuthi/ProductKeSieuthi';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 if (typeof window !== "undefined") {
   injectStyle();
@@ -61,6 +62,7 @@ function App() {
 
     <div className="App">
       <Router history={history}>
+        <ScrollToTop />
         < Header />
         <Switch>
           <div className="main">

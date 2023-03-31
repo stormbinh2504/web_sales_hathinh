@@ -114,10 +114,16 @@ const MenuSidebar = ({ setIsOpenMenu }) => {
             </SubMenu>
 
             <SubMenu label="Kệ để hàng trung tải">
-              <MenuItem>
+              <MenuItem
+                active={checkActiveMenu(PATH_NAME.KE_TRUNG_TAI)}
+                onClick={(e) => onRedirectByPathname(PATH_NAME.KE_TRUNG_TAI)}
+              >
                 Kệ trung tải
               </MenuItem>
-              <MenuItem>
+              <MenuItem
+                active={checkActiveMenu(PATH_NAME.KE_CON_LAN_TRUNG_TAI)}
+                onClick={(e) => onRedirectByPathname(PATH_NAME.KE_CON_LAN_TRUNG_TAI)}
+              >
                 Kệ con lăn trung tải
               </MenuItem>
             </SubMenu>
