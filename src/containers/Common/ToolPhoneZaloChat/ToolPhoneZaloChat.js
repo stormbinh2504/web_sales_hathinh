@@ -20,10 +20,10 @@ const ToolPhoneZaloChat = ({ children }) => {
             </div>
             <div class="zaloring-alo-phone">
                 <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0904691888" class="alo-ph-img-circle img-zaloring"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0982535391" class="alo-ph-img-circle img-zaloring"></a>
             </div>
             <div class="mess-facebook">
-                <a rel="nofollow" target="_blank" href="https://zalo.me/0904691888" class="fb-btn"></a>
+                <a rel="nofollow" target="_blank" href="https://zalo.me/0982535391" class="fb-btn"></a>
             </div>
             <div class="youtube-recomend">
                 <a rel="nofollow" target="_blank" href="https://www.youtube.com/" class="youtube-btn"></a>

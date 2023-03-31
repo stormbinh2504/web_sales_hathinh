@@ -116,7 +116,7 @@ const ProductKeSelective = () => {
                                                 </p>
                                                 <p>
                                                     <strong>
-                                                        <span style={{ fontSize: "15px" }}>Hình ảnh kệ Selective MYTEK lắp đặt:&nbsp;</span>
+                                                        <span style={{ fontSize: "15px" }}>Hình ảnh kệ Selective Tân Trường Phát Vina lắp đặt:&nbsp;</span>
                                                     </strong>
                                                 </p>
                                                 <p class="text-center">
@@ -130,10 +130,10 @@ const ProductKeSelective = () => {
                                                     </span>
                                                 </p>
                                                 <p>
-                                                    <span style={{ fontSize: "15px" }}>Kệ công nghiệp MYTEK được sản xuất từ sắt thép tiêu chuẩn JIS G3101 SS400 với khả năng chịu lực và độ bền cực cao. Dây chuyển sản xuất khép kín, hiện đại với tiêu chuẩn quốc tế, công nghệ phun sơn tĩnh điện&nbsp;giúp sản phẩm&nbsp;có tuổi thọ&nbsp;dài lâu, chống cháy nổ, rỉ sét.&nbsp;</span>
+                                                    <span style={{ fontSize: "15px" }}>Kệ công nghiệp Tân Trường Phát Vina được sản xuất từ sắt thép tiêu chuẩn JIS G3101 SS400 với khả năng chịu lực và độ bền cực cao. Dây chuyển sản xuất khép kín, hiện đại với tiêu chuẩn quốc tế, công nghệ phun sơn tĩnh điện&nbsp;giúp sản phẩm&nbsp;có tuổi thọ&nbsp;dài lâu, chống cháy nổ, rỉ sét.&nbsp;</span>
                                                 </p>
                                                 <p>
-                                                    <span style={{ fontSize: "15px" }}>Đến với MYTEK, khách hàng&nbsp;sẽ nhận được tư vấn miễn phí về các vấn đề setup, lựa chọn kệ cho kho hàng.&nbsp;MYTEK hỗ trợ khách hàng lắp đặt và vận chuyển trên toàn quốc. Với chế độ bảo hành lên tới&nbsp;3&nbsp;năm, quý khách hàng hoàn toàn yên tâm&nbsp;về quá trình sử dụng. Đội ngũ kỹ thuật của MYTEK luôn sẵn sàng hỗ trợ khách hàng trong trường&nbsp;hợp cần thiết.&nbsp;</span></p>
+                                                    <span style={{ fontSize: "15px" }}>Đến với Tân Trường Phát Vina, khách hàng&nbsp;sẽ nhận được tư vấn miễn phí về các vấn đề setup, lựa chọn kệ cho kho hàng.&nbsp;Tân Trường Phát Vina hỗ trợ khách hàng lắp đặt và vận chuyển trên toàn quốc. Với chế độ bảo hành lên tới&nbsp;3&nbsp;năm, quý khách hàng hoàn toàn yên tâm&nbsp;về quá trình sử dụng. Đội ngũ kỹ thuật của Tân Trường Phát Vina luôn sẵn sàng hỗ trợ khách hàng trong trường&nbsp;hợp cần thiết.&nbsp;</span></p>
                                                 <p>
                                                     <span style={{ fontSize: "15px" }}>Khách hàng có nhu cầu lắp đặt giá kệ công nghiệp vui lòng liên hệ với chúng tôi để được tư vấn và báo giá chính xác nhất:</span>
                                                 </p>

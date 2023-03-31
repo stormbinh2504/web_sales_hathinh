@@ -67,13 +67,13 @@ const Home = () => {
             <section id="content-home" className="content-home">
                 <div className="content-wrap">
                     <div id="home-counter" className="home-counter">
-                        <div class="container">
+                        <div class="container gutters-0">
                             <div className="row">
                                 <div class="section-heading">
                                     <h2 class="section-title">
-                                        <span>CÔNG TY CỔ PHẦN CÔNG NGHIỆP MYTEK</span>
+                                        <span>Công ty TNHH Tân Trường Phát Vina</span>
                                     </h2>
-                                    <div class="desc">Công ty Cổ phần Công nghiệp MYTEK kể từ ngày thành lập đến nay đã không ngừng phát triển và trở thành một Công ty hàng đầu chuyên về thiết kế và sản xuất kệ chứa hàng phục vụ mọi đối tượng khách hàng trong nước cũng như xuất khẩu. Với thế mạnh là kinh nghiệm lâu năm cùng với đội ngũ cán bộ kỹ thuật được đào tạo chính qui, công nhân tay nghề cao và dây chuyền khép kín, chúng tôi có khả năng tư vấn, thiết kế và trang bị hệ thống kệ chứa hàng cho quý khách với hiệu quả cao nhất và chi phí hợp lý nhất.</div>
+                                    <div class="desc">Công ty TNHH Tân Trường Phát Vina kể từ ngày thành lập đến nay đã không ngừng phát triển và trở thành một Công ty hàng đầu chuyên về thiết kế và sản xuất kệ chứa hàng phục vụ mọi đối tượng khách hàng trong nước cũng như xuất khẩu. Với thế mạnh là kinh nghiệm lâu năm cùng với đội ngũ cán bộ kỹ thuật được đào tạo chính qui, công nhân tay nghề cao và dây chuyền khép kín, chúng tôi có khả năng tư vấn, thiết kế và trang bị hệ thống kệ chứa hàng cho quý khách với hiệu quả cao nhất và chi phí hợp lý nhất.</div>
                                 </div>
                                 <div class="row w-100">
                                     <div class="col-6 col-md-6 col-lg-3">

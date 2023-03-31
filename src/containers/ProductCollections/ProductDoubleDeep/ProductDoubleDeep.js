@@ -95,7 +95,7 @@ const ProductDoubleDeep = () => {
                                                         <span style={{ fontSize: "15px" }}>Kệ Double Deep (Kệ đôi sâu) là dạng kệ có 2 pallet chứa hàng được để sâu vào bên trong kệ, tăng sức chứa hàng hóa.</span>
                                                     </p>
                                                     <p>
-                                                        <span style={{ fontSize: "15px" }}>Đây cũng là một dạng kệ chọn (Selective), được tạo nên bởi 2 dãy kệ đôi giáp lưng vào nhau nhờ vậy diện tích sàn kho sử dụng tăng lên do giảm được không gian của các lối đi.</span></p><p><span style={{ fontSize: "15px" }}>Với hơn 10 năm kinh nghiệm , MYTEK đã đưa ra giải pháp về kệ chứa hàng Selective để được 2 pallet theo chiều sâu này cung cấp cho nhiều khách hàng. Giải pháp này đã đem lại hiệu suất tối đa cho kho chứa hàng dạng Selective Rack.</span></p><p><span style={{ fontSize: "15px" }}>
+                                                        <span style={{ fontSize: "15px" }}>Đây cũng là một dạng kệ chọn (Selective), được tạo nên bởi 2 dãy kệ đôi giáp lưng vào nhau nhờ vậy diện tích sàn kho sử dụng tăng lên do giảm được không gian của các lối đi.</span></p><p><span style={{ fontSize: "15px" }}>Với hơn 10 năm kinh nghiệm , Tân Trường Phát Vina đã đưa ra giải pháp về kệ chứa hàng Selective để được 2 pallet theo chiều sâu này cung cấp cho nhiều khách hàng. Giải pháp này đã đem lại hiệu suất tối đa cho kho chứa hàng dạng Selective Rack.</span></p><p><span style={{ fontSize: "15px" }}>
                                                             <strong>Đặc tính:&nbsp;</strong>
                                                         </span>
                                                     </p>
@@ -118,7 +118,7 @@ const ProductDoubleDeep = () => {
                                                         </li>
                                                     </ul>
                                                     <p>
-                                                        <span style={{ fontSize: "15px" }}><strong>Hình ảnh kệ Double Deep MYTEK lắp đặt:&nbsp;</strong>
+                                                        <span style={{ fontSize: "15px" }}><strong>Hình ảnh kệ Double Deep Tân Trường Phát Vina lắp đặt:&nbsp;</strong>
                                                         </span>
                                                     </p>
                                                     <p class="text-center">&nbsp;</p><p class="text-center">
@@ -141,10 +141,10 @@ const ProductDoubleDeep = () => {
                                                     <p>
                                                     </p>
                                                     <p>
-                                                        <span style={{ fontSize: "15px" }}>Kệ công nghiệp MYTEK được sản xuất từ sắt thép tiêu chuẩn JIS G3101 SS400 với khả năng chịu lực và độ bền cực cao. Dây chuyển sản xuất khép kín, hiện đại với tiêu chuẩn quốc tế, công nghệ phun sơn tĩnh điện&nbsp;giúp sản phẩm&nbsp;có tuổi thọ&nbsp;dài lâu, chống cháy nổ, rỉ sét.&nbsp;</span>
+                                                        <span style={{ fontSize: "15px" }}>Kệ công nghiệp Tân Trường Phát Vina được sản xuất từ sắt thép tiêu chuẩn JIS G3101 SS400 với khả năng chịu lực và độ bền cực cao. Dây chuyển sản xuất khép kín, hiện đại với tiêu chuẩn quốc tế, công nghệ phun sơn tĩnh điện&nbsp;giúp sản phẩm&nbsp;có tuổi thọ&nbsp;dài lâu, chống cháy nổ, rỉ sét.&nbsp;</span>
                                                     </p>
                                                     <p>
-                                                        <span style={{ fontSize: "15px" }}>Đến với MYTEK, khách hàng&nbsp;sẽ nhận được tư vấn miễn phí về các vấn đề setup, lựa chọn kệ cho kho hàng.&nbsp;MYTEK hỗ trợ khách hàng lắp đặt và vận chuyển trên toàn quốc. Với chế độ bảo hành lên tới&nbsp;3&nbsp;năm, quý khách hàng hoàn toàn yên tâm&nbsp;về quá trình sử dụng. Đội ngũ kỹ thuật của MYTEK luôn sẵn sàng hỗ trợ khách hàng trong trường hợp cần thiết.&nbsp;</span></p><p><span style={{ fontSize: "15px" }}>Khách hàng có nhu cầu lắp đặt giá kệ công nghiệp vui lòng liên hệ với chúng tôi để được tư vấn và báo giá chính xác nhất:</span></p><p><span style={{ fontSize: "15px" }}>
+                                                        <span style={{ fontSize: "15px" }}>Đến với Tân Trường Phát Vina, khách hàng&nbsp;sẽ nhận được tư vấn miễn phí về các vấn đề setup, lựa chọn kệ cho kho hàng.&nbsp;Tân Trường Phát Vina hỗ trợ khách hàng lắp đặt và vận chuyển trên toàn quốc. Với chế độ bảo hành lên tới&nbsp;3&nbsp;năm, quý khách hàng hoàn toàn yên tâm&nbsp;về quá trình sử dụng. Đội ngũ kỹ thuật của Tân Trường Phát Vina luôn sẵn sàng hỗ trợ khách hàng trong trường hợp cần thiết.&nbsp;</span></p><p><span style={{ fontSize: "15px" }}>Khách hàng có nhu cầu lắp đặt giá kệ công nghiệp vui lòng liên hệ với chúng tôi để được tư vấn và báo giá chính xác nhất:</span></p><p><span style={{ fontSize: "15px" }}>
 
                                                         </span>
                                                     </p>

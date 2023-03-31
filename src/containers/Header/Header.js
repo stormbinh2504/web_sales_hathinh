@@ -60,8 +60,8 @@ const Header = () => {
                 setIsOpenMenu={setIsOpenMenu}
             />}
             <div id="container-header" className="container container-header">
-                <div className="row gutters-0 w-100">
-                    <div className="col-12 col-ms-6 col-lg-3 navbar-logo item-center">
+                <div className="row w-100">
+                    <div className="col-12 col-ms-6 col-lg-2 navbar-logo item-center">
                         <div className='div-img-logo' onClick={onRedirectHome}>
                             <img className="img-logo" src={logo} />
                         </div>
@@ -69,17 +69,17 @@ const Header = () => {
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div className="header-extras col-12 col-ms-6 col-lg-9 ">
+                    <div className="header-extras col-12 col-ms-6 col-lg-10 ">
                         <div className="row w-100 gutters-0 h-100">
                             <div className="extra-item col-4" data-id="5fcb72ee" data-element_type="column">
                                 <div className="extra-wrap">
                                     <div className="extra-item-icon item-center">
-                                        <a href="tel:0903 229 005"><i className="fa fa-phone" aria-hidden="true"></i></a>
+                                        <a href="tel:0982 535 391"><i className="fa fa-phone" aria-hidden="true"></i></a>
                                     </div>
                                     <div className="extra-item-content">
                                         Hotline
                                         <div className="info-content">
-                                            <a href="tel:0903 229 005">0903 229 005</a>
+                                            <a href="tel:0982 535 391">0982 535 391</a>
                                         </div>
                                     </div>
                                 </div>
@@ -107,7 +107,7 @@ const Header = () => {
                                     <div className="extra-item-content">
                                         THỜI GIAN LÀM VIỆC
                                         <div className="info-content">
-                                            Thứ 2 - Thứ 7, 8h30 - 17h30
+                                            Thứ 2 - Thứ 7, 8h - 17h
                                         </div>
                                     </div>
                                 </div>

@@ -6,7 +6,8 @@ import { setMenuActive } from '../../../redux/actions'
 
 import "./ProductDesc.scss"
 
-
+import product_desc_call from "../../../assets/images/product_desc/product_desc_call.png"
+import product_desc_zalo from "../../../assets/images/product_desc/product_desc_zalo.png"
 
 const ProductDesc = ({ productDesc }) => {
     const { title } = productDesc
@@ -23,13 +24,13 @@ const ProductDesc = ({ productDesc }) => {
             <div class="clear"></div>
 
             <div class="btn-wrap">
-                <a class="phone item-center" href="tel:0903229005">
-                    <img src="//theme.hstatic.net/200000335999/1000709370/14/phone-ring.png?v=1455" alt="icon" />
-                    Gọi ngay 0903.229.005
+                <a class="phone item-center" href="tel:0982535391">
+                    <img src={product_desc_call} alt="icon" />
+                    Gọi ngay 0982 535 391
                 </a>
                 <div className="chat-require">
-                    <a class="chat item-center" href="https://zalo.me/0903229005" target="_blank">
-                        <img src="//theme.hstatic.net/200000335999/1000709370/14/zalo.png?v=1455" alt="icon" />
+                    <a class="chat item-center" href="https://zalo.me/0982535391" target="_blank">
+                        <img src={product_desc_zalo} alt="icon" />
                         Chat
                     </a>
                     <a class="require item-center" href="/pages/lien-he" >

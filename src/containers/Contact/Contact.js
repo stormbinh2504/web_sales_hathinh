@@ -49,7 +49,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Nhà máy sản xuất:&nbsp;
                                         </strong>
-                                        Đường D2, khu D, KCN Phố Nối A, Huyện Văn Lâm, Tỉnh Hưng Yên, Việt Nam
+                                        Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh
                                     </span>
                                 </li>
                                 <li>
@@ -58,7 +58,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Hotline:&nbsp;
                                         </strong>
-                                        0903 229 005 / 0243 77 55 666
+                                        0982 535 391
                                     </span>
                                 </li>
                                 <li>

@@ -18,12 +18,12 @@ const Footer = () => {
                     <div class="row">
                         <div class="col-xs-12 col-sm-4 column-1">
                             <div class="">
-                                <h4>Công ty Cổ phần Công nghiệp MYTEK</h4>
+                                <h4>Công ty TNHH Tân Trường Phát Vina</h4>
                                 <p>Nhà cung cấp giá kệ để hàng công nghiệp uy tín nhất Việt Nam với hơn 15 năm kinh nghiệm tư vấn và thi công thực tế</p>
                                 <h5>Văn phòng đại diện</h5>
-                                <p>Tầng 5, tòa nhà HT, 28 Xuân La, Tây Hồ, Hà Nội</p>
+                                <p>Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh</p>
                                 <h5>Nhà máy sản xuất</h5>
-                                <p>Đường D2, Khu D, KCN Phố Nối A, xã Lạc Hồng, huyện Văn Lâm, tỉnh Hưng Yên</p>
+                                <p>Phố Hộ Vệ, Lạc Vệ, Tiên Du, Bắc Ninh</p>
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-4 column-2">
@@ -75,11 +75,11 @@ const Footer = () => {
                                 </div>
                                 <div class="item">
                                     <div class="icon">
-                                        <a href="https://zalo.me/0903229005"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_2.png?v=1455" /></a>
+                                        <a href="https://zalo.me/0982535391"><img src="//theme.hstatic.net/200000335999/1000709370/14/ft_social_ico_2.png?v=1455" /></a>
                                     </div>
                                     {/* <div class="info">
-                                        <a href="https://zalo.me/0903229005" target="_blank"><span class="hide">Nhắn tin</span></a>
-                                        <a href="https://zalo.me/0903229005" target="_blank"><span class="hide">Zalo</span></a>
+                                        <a href="https://zalo.me/0982535391" target="_blank"><span class="hide">Nhắn tin</span></a>
+                                        <a href="https://zalo.me/0982535391" target="_blank"><span class="hide">Zalo</span></a>
                                     </div> */}
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const Footer = () => {
                             <a class="icon-call icon-pre-footer">
                                 <i className="fa fa-phone" aria-hidden="true"></i>
                             </a>
-                            <h4><a href="/pages/lien-he">Hotline: 0903 229 005</a></h4>
+                            <h4><a href="/pages/lien-he">Hotline: 0982 535 391</a></h4>
                         </div>
                         <div class="col-6 col-md-3 text-center">
                             <a class="icon-user2 icon-pre-footer">
@@ -118,7 +118,7 @@ const Footer = () => {
                 <div class="container clearfix copyright-links">
                     <div className="row">
                         <div class="col12 col-md-6">
-                            © Bản quyền thuộc về MYTEK JSC
+                            © Bản quyền thuộc về Tân Trường Phát Vina
                         </div>
                         <div class="col12 col-md-6">
                         </div>

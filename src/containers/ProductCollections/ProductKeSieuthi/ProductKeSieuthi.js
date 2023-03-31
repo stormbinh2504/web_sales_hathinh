@@ -69,7 +69,7 @@ const ProductKeSieuthi = () => {
                                         </div>
                                         <ProductShortDesc
                                             listDesc={[
-                                                "Kệ siêu thị MYTEK sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kín",
+                                                "Kệ siêu thị Tân Trường Phát Vina sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kín",
                                                 "Sản phẩm được áp dụng công nghệ phun sơn tĩnh điện giúp màu sơn đồng đều, không bị rỉ sét",
                                                 "Độ chịu lực của kệ cực tốt, có thể bày hàng trọng lượng từ 50 - 100kg/tầng. Tuổi thọ kệ lâu dài, sử dụng 15 - 20 năm.",
                                             ]}

@@ -316,7 +316,7 @@ const listProDuct = [
         title: "Kệ siêu thị",
         path: PATH_NAME.KE_SIEU_THI,
         listImages: [product_ke_sieu_thi_img1, product_ke_sieu_thi_img2],
-        productDesc: "Kệ siêu thị MYTEK sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
+        productDesc: "Kệ siêu thị Tân Trường Phát Vina sử dụng chất liệu thép, tôn cao cấp và được sản xuất trên dây chuyền máy móc hiện đại, khép kínSản phẩm được áp dụng công nghệ phun...",
     },
 ]
 
@@ -383,7 +383,7 @@ const ProductCollections = () => {
                     <div className="collection-description" >
                         <div className="container">
                             <h3>
-                                <span >MYTEK LÀ NHÀ SẢN XUẤT GIÁ KỆ CHỨA HÀNG CHUYÊN NGHIỆP</span>
+                                <span >Tân Trường Phát Vina LÀ NHÀ SẢN XUẤT GIÁ KỆ CHỨA HÀNG CHUYÊN NGHIỆP</span>
                             </h3>
                             <div class="rte-col3">
                                 <RenderCol
