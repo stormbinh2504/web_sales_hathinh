@@ -72,7 +72,7 @@ const HomeStep = () => {
                     </div>
                     <div class="col-12">
                         <div class="home-step-contact">
-                            <h4 class="title">Liên hệ ngay với Mytek</h4>
+                            <h4 class="title">Liên hệ ngay với Tân Trường Phát Vina</h4>
                             <div class="content">
                                 <div class="item">
                                     <div class="icon"><i class="icon-call"></i></div>

@@ -16,7 +16,7 @@ const ToolPhoneZaloChat = ({ children }) => {
         <div className='tool-phone-zalo-chat'>
             <div class='phonering-alo-phone'>
                 <div class="phonering-alo-ph-circle-fill"></div>
-                <a rel="nofollow" target="_blank" href="tel:0941608833" class="alo-ph-img-circle img-phonering"></a>
+                <a rel="nofollow" target="_blank" href="tel:0982535391" class="alo-ph-img-circle img-phonering"></a>
             </div>
             <div class="zaloring-alo-phone">
                 <div class="phonering-alo-ph-circle-fill"></div>

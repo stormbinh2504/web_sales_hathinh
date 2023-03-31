@@ -52,7 +52,7 @@ const Footer = () => {
                                 <h4>Danh mục</h4>
                                 <ul>
 
-                                    <li><a href="/collections/gia-ke-mytek"><i class="fa fa-caret-right" aria-hidden="true"></i>Sản phẩm</a></li>
+                                    <li><a href="/collections/gia-ke-vina"><i class="fa fa-caret-right" aria-hidden="true"></i>Sản phẩm</a></li>
 
                                     <li><a href="/blogs/du-an-hoan-thanh"><i class="fa fa-caret-right" aria-hidden="true"></i>Dự án hoàn thành</a></li>
 

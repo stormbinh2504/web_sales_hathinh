@@ -1,6 +1,6 @@
 export const PATH_NAME = {
     HOME: "/", // Người mua
-    COLLECTIONS: "/collections/gia-ke-mytek", // Người bán
+    COLLECTIONS: "/collections/gia-ke-vina", // Người bán
     BLOGS: "/blogs/du-an-hoan-thanh", // Người bán
     ABOUT_OUR: "/pages/ve-chung-toi", // Người bán
     CONTACT: "/pages/lien-he", // Người bán

@@ -99,7 +99,7 @@ const HomeBanner = () => {
                 </div>
                 <div class="col-xs-12">
                     <div class="view-all text-center">
-                        <a class="btn" href="/collections/gia-ke-mytek">TẤT CẢ SẢN PHẨM</a>
+                        <a class="btn" href="/collections/gia-ke-vina">TẤT CẢ SẢN PHẨM</a>
                     </div>
                 </div>
             </div>
