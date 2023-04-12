@@ -15,6 +15,7 @@ import ProductDetailDesc from '../../Common/ProductDetailDesc/ProductDetailDesc'
 import img1 from "../../../assets/images/product_collections/product_ke_xep_chong/img1.jpg"
 import img2 from "../../../assets/images/product_collections/product_ke_xep_chong/img2.jpg"
 import img3 from "../../../assets/images/product_collections/product_ke_xep_chong/img3.jpg"
+import img4 from "../../../assets/images/product_collections/product_ke_xep_chong/img4.jpg"
 
 
 const ProductKeXepChong = () => {
@@ -33,6 +34,10 @@ const ProductKeXepChong = () => {
         {
             original: img3,
             thumbnail: img3,
+        },
+        {
+            original: img4,
+            thumbnail: img4,
         },
     ];
 
@@ -85,13 +90,13 @@ const ProductKeXepChong = () => {
                                                 <div class="tab-container">
                                                     <div class="tab-content clearfix" id="tabs-1">
                                                         <p>
-                                                            </p><p><span style={{ fontSize: "15px" }}>Hệ thống kệ chứa hàng dạng xếp chồng là giải pháp linh hoạt cho các kho chứa hàng hóa có nhiều khoảng trống mà không thể lắp đặt các loại kệ chứa hàng cố định, và cho việc chứa hàng hóa lưu động&nbsp;<em>(ví dụ như ngoài công trường,…)
-                                                            </em>
+                                                        </p><p><span style={{ fontSize: "15px" }}>Hệ thống kệ chứa hàng dạng xếp chồng là giải pháp linh hoạt cho các kho chứa hàng hóa có nhiều khoảng trống mà không thể lắp đặt các loại kệ chứa hàng cố định, và cho việc chứa hàng hóa lưu động&nbsp;<em>(ví dụ như ngoài công trường,…)
+                                                        </em>
                                                         </span>
                                                         </p><p><span style={{ fontSize: "15px" }}>Hàng hóa được để trên các loại pallet được thiết kế đặc biệt có thể xếp crồng lên nhau đến 3 tầng. Khi không sử dụng nữa, chúng có thể gấp lại rất gọn gàng.
                                                         </span>
-                                                        </p><hr/><p><span style={{ fontSize: "18px" }}><strong>Nhà sản xuất giá kệ công nghiệp hàng đầu Việt Nam
-                                                            </strong>
+                                                        </p><hr /><p><span style={{ fontSize: "18px" }}><strong>Nhà sản xuất giá kệ công nghiệp hàng đầu Việt Nam
+                                                        </strong>
                                                         </span>
                                                         </p><p><span style={{ fontSize: "15px" }}>Kệ công nghiệp Tân Trường Phát Vina được sản xuất từ sắt thép tiêu chuẩn JIS G3101 SS400 với khả năng chịu lực và độ bền cực cao. Dây chuyển sản xuất khép kín, hiện đại với tiêu chuẩn quốc tế, công nghệ phun sơn tĩnh điện&nbsp;giúp sản phẩm&nbsp;có tuổi thọ&nbsp;dài lâu, chống cháy nổ, rỉ sét.&nbsp;
                                                         </span>

@@ -16,6 +16,7 @@ import product_ke_double_deep_img1 from "../../assets/images/product_collections
 import product_ke_double_deep_img2 from "../../assets/images/product_collections/product_ke_double_deep/img2.jpg"
 
 import product_ke_narrow_aisle_img1 from "../../assets/images/product_collections/product_ke_narrow_aisle/img1.jpg"
+import product_ke_narrow_aisle_img2 from "../../assets/images/product_collections/product_ke_narrow_aisle/img2.jpg"
 
 import product_ke_pallet_di_dong_img1 from "../../assets/images/product_collections/product_ke_pallet_di_dong/img1.jpg"
 import product_ke_pallet_di_dong_img2 from "../../assets/images/product_collections/product_ke_pallet_di_dong/img2.jpg"
@@ -237,7 +238,7 @@ const listProDuct = [
     {
         title: "Kệ Narrow Aisle",
         path: PATH_NAME.KE_NARROW_AISLE,
-        listImages: [product_ke_narrow_aisle_img1],
+        listImages: [product_ke_narrow_aisle_img1, product_ke_narrow_aisle_img1],
         productDesc: "Các Pallet có thể được chứa ở những vị trí rất cao trong không gian của kho chứa hàng. Chiều ngang của lối đi nhỏ nhất nên tận dụng được diện...",
     },
     {

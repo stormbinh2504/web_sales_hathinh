@@ -15,6 +15,7 @@ import ProductDetailDesc from '../../Common/ProductDetailDesc/ProductDetailDesc'
 import img1 from "../../../assets/images/product_collections/product_ke_double_deep/img1.jpg"
 import img2 from "../../../assets/images/product_collections/product_ke_double_deep/img2.jpg"
 import img3 from "../../../assets/images/product_collections/product_ke_double_deep/img3.jpg"
+import img4 from "../../../assets/images/product_collections/product_ke_double_deep/img4.jpg"
 
 
 const ProductDoubleDeep = () => {
@@ -33,6 +34,10 @@ const ProductDoubleDeep = () => {
         {
             original: img3,
             thumbnail: img3,
+        },
+        {
+            original: img4,
+            thumbnail: img4,
         },
     ];
 

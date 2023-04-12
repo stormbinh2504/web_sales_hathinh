@@ -16,6 +16,7 @@ import img1 from "../../../assets/images/product_collections/product_ke_selectiv
 import img2 from "../../../assets/images/product_collections/product_ke_selective/img2.jpg"
 import img3 from "../../../assets/images/product_collections/product_ke_selective/img3.jpg"
 import img4 from "../../../assets/images/product_collections/product_ke_selective/img4.jpg"
+import img5 from "../../../assets/images/product_collections/product_ke_selective/img5.jpg"
 
 
 const ProductKeSelective = () => {
@@ -38,6 +39,10 @@ const ProductKeSelective = () => {
         {
             original: img4,
             thumbnail: img4,
+        },
+        {
+            original: img5,
+            thumbnail: img5,
         },
     ];
 
