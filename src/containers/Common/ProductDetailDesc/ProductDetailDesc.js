@@ -54,7 +54,7 @@ const ProductDetailDesc = ({ children }) => {
                     <li>
                         <span style={{ fontSize: "15px" }}>
                             {/* <i className="fa fa-envelope-o" aria-hidden="true"></i> */}
-                            - Email: sales@giakedehang.vn
+                            - Email: sales.giakettp@gmail.com
                         </span>
                     </li>
                 </ul>

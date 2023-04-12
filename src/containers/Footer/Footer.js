@@ -91,7 +91,7 @@ const Footer = () => {
                             <a className="icon-line-mail icon-pre-footer">
                                 <i className="fa fa-envelope-o" aria-hidden="true"></i>
                             </a>
-                            <h4><a href="/pages/lien-he">sales@giakedehang.vn</a></h4>
+                            <h4><a href="/pages/lien-he">sales.giakettp@gmail.com</a></h4>
                         </div>
                         <div className="col-6 col-md-3 text-center">
                             <a className="icon-call icon-pre-footer">

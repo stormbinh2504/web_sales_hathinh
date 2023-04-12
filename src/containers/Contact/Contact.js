@@ -67,7 +67,7 @@ const Contact = ({ google }) => {
                                         <strong>
                                             Email:&nbsp;
                                         </strong>
-                                        sales@giakedehang.vn
+                                        sales.giakettp@gmail.com
                                     </span>
                                 </li>
                             </ul>

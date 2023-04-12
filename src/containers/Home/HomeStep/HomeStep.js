@@ -80,7 +80,7 @@ const HomeStep = () => {
                                 </div>
                                 <div className="item">
                                     <div className="icon"><i className="icon-line-mail"></i></div>
-                                    <div className="text"><a href="mailto:sales@giakedehang.vn">EMAIL</a></div>
+                                    <div className="text"><a href="mailto:sales.giakettp@gmail.com">EMAIL</a></div>
                                 </div>
                                 <div className="item">
                                     <div className="icon"><i className="icon-line-mail"></i></div>

@@ -93,7 +93,7 @@ const Header = () => {
                                     <div className="extra-item-content">
                                         EMAIL
                                         <div className="info-content">
-                                            sales@giakedehang.vn
+                                            sales.giakettp@gmail.com
                                         </div>
                                     </div>
                                 </div>
